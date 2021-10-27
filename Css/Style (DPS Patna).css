@@ -187,11 +187,13 @@ iframe {
 @media screen and (max-width: 768px) {
   .welcome {
     position: absolute;
-    top: 500px;
+    top: 550px;
   }
   iframe {
     top: 400px;
+    left: 0px
   }
+
 }
 
 .event {
@@ -224,6 +226,7 @@ iframe {
   position: absolute;
   top: 8px;
   left: 150px;
+  font-size: 20px
 }
 
 @media screen and (max-width: 768px) {
@@ -231,4 +234,19 @@ iframe {
     position: absolute;
     top: 1250px
   }
+}
+
+@media screen and (max-width: 325px) {
+  .event {
+    top: 1278px
+  }
+}
+
+.card{
+  margin: 5% 0%;
+}
+
+.card-body{
+  margin: 0% 0% 0% 3%;
+  padding: 6% 0%;
 }
