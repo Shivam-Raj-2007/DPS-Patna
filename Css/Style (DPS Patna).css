@@ -255,3 +255,73 @@ iframe {
 .mb-2 {
   background-color: #fff
 }
+
+
+.activity {
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .event {
+    top: 900px;
+  }
+}
+@media screen and (max-width: 667px){
+  .event {
+    top: 925px;
+  }
+}
+
+@media screen and (max-width: 617px){
+  .event {
+    top: 950px
+  }
+}
+
+@media screen and (max-width: 576px){
+  .event {
+    top: 975px
+  }
+}
+@media screen and (max-width: 545px){
+  .event {
+    top: 1000px
+  }
+}
+
+@media screen and (max-width: 517px){
+  .event {
+    top: 1025px;
+  }
+}
+
+@media screen and (max-width: 481px){
+  .event {
+    top: 1050px;
+  }
+}
+
+@media screen and (max-width: 456px){
+  .event {
+    top: 1075px;
+  }
+}
+
+@media screen and (max-width: 434px){
+  .event {
+    top: 1100px;
+  }
+}
+
+@media screen and (max-width: 405px){
+  .event {
+    top: 1125px;
+  }
+}
+
+@media screen and (max-width: 401px){
+  .event {
+    top: 1150px;
+  }
+}
