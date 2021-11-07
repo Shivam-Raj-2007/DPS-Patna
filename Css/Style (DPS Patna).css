@@ -39,7 +39,6 @@ html{
    font-size: 36px;
 }
 
-
 .nav-link {
   position: relative;
   left: 600;
@@ -98,6 +97,7 @@ html{
   }
 }
 
+
 .navbar-brand {
   z-index: 1005;
 }
@@ -132,6 +132,7 @@ html{
   text-align: left;
   outline: none;
   padding: 8px 8px 8px 32px;
+  transition: max-height 0.2s ease-out;
 }
 
 .collapsible:hover {
@@ -194,7 +195,12 @@ iframe {
     top: 400px;
     left: 0px
   }
+}
 
+@media screen and (max-width: 335px){
+  iframe {
+    width: 300px;
+  }
 }
 
 .event {
@@ -206,10 +212,15 @@ iframe {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 300px;
   text-align: center;
+  border-radius: 15px;
 }
 
 .card a {
   color: orange
+}
+
+.card img {
+  border-radius: 15px 15px 0px 0px;
 }
 
 .date {
@@ -324,4 +335,39 @@ iframe {
   .event {
     top: 1150px;
   }
+}
+
+@media screen and (max-width: 364px){
+  .event {
+    top: 1175px;
+  }
+}
+
+@media screen and (max-width: 356px){
+  .event {
+    top: 1200px;
+  }
+}
+
+@media screen and (max-width: 338px){
+  .event {
+    top: 1225px;
+  }
+}
+
+@media screen and (max-width: 336px){
+  .event {
+    top: 1250px;
+  }
+}
+
+@media screen and (max-width: 324px){
+  .event {
+    top: 1275px;
+  }
+}
+
+.circular {
+  margin-left: 25px;
+  margin-right: 10px;
 }
