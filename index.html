@@ -16,7 +16,7 @@
   <body>
     <div id="mySidenav" class="sidenav">
     <div class="menu-top" id="menuTop"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div><br><br><br>
-    <button type="button" class="collapsible">About</button>
+    <button type="button" class="collapsible collapsible-option">About</button>
     <div class="content">
       <a href="https://www.dpspatna.com/page.php?PAGE=2">About DPS Patna</a>
       <a href="https://www.dpspatna.com/page.php?PAGE=3">Infrastructure</a>
@@ -28,13 +28,13 @@
       <a href="https://www.dpspatna.com/upload/pdf/Mandatory-Public-Disclosure.pdf">Mandatory Information</a>
     </div>
     <a href="https://www.dpspatna.com/page.php?PAGE=53">Admissions</a>
-    <button type="button" class="collapsible">Careers</button>
+    <button type="button" class="collapsible collapsible-option">Careers</button>
     <div class="content">
       <a href="https://www.dpspatna.com/page.php?PAGE=10">Advertisement</a>
       <a href="https://www.dpspatna.com/page.php?PAGE=63">Careers@DPS Patna</a>
       <a href="https://www.dpspatna.com/page.php?PAGE=12">Applying to DPS</a>
     </div>
-    <button type="button" class="collapsible">Info Link</button>
+    <button type="button" class="collapsible collapsible-option">Info Link</button>
     <div class="content">
       <a href="http://www.takshila.net/">Takshila</a>
       <a href="https://www.dpscoimbatore.com/">DPS Coimbatore</a>
@@ -46,7 +46,7 @@
     </div>
     <a href="https://www.dpspatna.com/page.php?PAGE=91" class="nav-link">Alumni</a>
     <a href="https://www.dpspatna.com/page.php?PAGE=55" class="nav-link">Outreach</a>
-    <button type="button" class="collapsible">Gallery</button>
+    <button type="button" class="collapsible collapsible-option">Gallery</button>
     <div class="content">
       <a href="https://www.dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
       <a href="https://www.dpspatna.com/video.php">Video Gallery</a>
@@ -259,7 +259,6 @@
 			<div class="col-lg-4 mb-2">
 				<div class="card mx-auto" style="width:18rem;">
 					<img class="card-img-top" src="https://www.dpspatna.com/upload/banner/321635763150.jpg"	alt="..." title="Mind Spark Result">
-
 					<div class="card-body">
 						<h5 class="card-title">
               <p class="date"><span class="dd">29</span><span class="month">OCT</span><span class="year"> 2021</span></p>
@@ -271,15 +270,11 @@
 		</div>
 	</div>
 </div><br><br>
-<!---<div class="circular">
-  <h3><i class="fas fa-newspaper"></i> LATEST CIRCULARS</h3>
-  <button type="button" class="collapsible">PARENTAL CIRCULAR <i class="fas fa-chevron-down"></i></button>
-
-  <div class="content"><br><br>
-   <a href="file:///C:/Users/Hp/Downloads/Sanskrit_Option.pdf" download>
-     Download Attachment
-   </a><br><br>
- </div>--->
+<div class="circular">
+  <h3><i class="fas fa-newspaper"></i> LATEST CIRCULARS</h3><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">29</span><span class="month">OCT</span><span class="year"> 2021</span></div></span>
+    <div class="text">PARENTAL CIRCULAR</div>
+    <button type="button" name="button" class="download-links"><a href="file:///C:/Users/Hp/Downloads/Sanskrit_Option.pdf" Download><i class="fas fa-download icons"></i> <span class="download"></span> <span class="pdf">PDF</span></a></button></div><br><br>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity=
 "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -310,9 +305,9 @@
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
-</script>
+\</script>
 <script>
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible-option");
 var i;
 
 for (i = 0; i < coll.length; i++) {
