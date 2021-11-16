@@ -5,6 +5,10 @@ html{
   scroll-behavior: smooth;
 }
 
+body {
+  margin-right: -25px;
+}
+
 .sidenav {
    height: 100%;
    width: 0px;
@@ -369,5 +373,165 @@ iframe {
 
 .circular {
   margin-left: 25px;
-  margin-right: 10px;
+  margin-right: 50px;
+}
+
+.circular .collapsible {
+  background-color: #ddd;
+  color: black;
+  padding: 0px;
+  border-radius: 15px;
+}
+
+.collapsible .date {
+  color: #fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-right: solid white;
+  display: inline-block;
+  background-color: #FF8B17;
+  padding: 10px
+}
+
+.collapsible .date .month {
+  position: absolute;
+  left: 65px;
+  top: 20px
+}
+
+.collapsible .text {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  margin-left: 5px
+}
+
+.circular .content img{
+  width: 1200px;
+  overflow: auto;
+}
+
+.download-links {
+  float: right;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 17px;
+}
+
+.download-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .circular {
+    position: absolute;
+    top: 2450px;
+    width: 100%
+  }
+  .circular .collapsible {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .text {
+    font-size: 15px
+  }
+  .circular {
+    top: 2475px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .circular {
+    top: 2500px;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .circular {
+    top: 2525px;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  .pdf {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .download {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .circular {
+    top: 2550px;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  .circular {
+    top: 2575px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .circular {
+    top: 2600px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .circular {
+    top: 2625px;
+  }
+}
+
+@media screen and (max-width: 357px) {
+  .circular {
+    top: 2650px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .circular {
+    top: 2675px;
+  }
+}
+
+@media screen and (max-width: 329px) {
+  .text {
+    font-size: 10.2px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .circular {
+    top: 2700px;
+  }
 }
