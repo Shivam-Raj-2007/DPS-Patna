@@ -5,8 +5,6 @@ html{
   scroll-behavior: smooth;
 }
 
-
-
 .sidenav {
    height: 100%;
    width: 0px;
@@ -148,12 +146,10 @@ html{
   text-align: left;
   padding: 8px 8px 8px 10px
 }
-
-.carousel-item {
-  max-width: 100%;
-}
+ 
 .carousel-item img {
   height: 500px;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 360px) {
