@@ -5,9 +5,7 @@ html{
   scroll-behavior: smooth;
 }
 
-body {
-  margin-right: -25px;
-}
+
 
 .sidenav {
    height: 100%;
@@ -533,5 +531,11 @@ iframe {
 @media screen and (max-width: 325px) {
   .circular {
     top: 2700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    width: 108% !important
   }
 }
