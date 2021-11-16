@@ -533,7 +533,7 @@ iframe {
     top: 2700px;
   }
 }
-
+/*
 @media screen and (max-width: 768px) {
   .carousel {
     width: 108% !important
