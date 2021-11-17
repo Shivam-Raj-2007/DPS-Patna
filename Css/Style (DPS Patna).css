@@ -424,7 +424,6 @@ iframe {
   .circular {
     position: absolute;
     top: 2450px;
-    width: 100%
   }
   .circular .collapsible {
     width: 90%;
