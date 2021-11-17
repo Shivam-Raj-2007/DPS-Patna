@@ -424,9 +424,9 @@ iframe {
     position: absolute;
     top: 2450px;
   }
-  .circular .collapsible {
+  /*.circular .collapsible {
     width: 90%;
-  }
+   }*/
 }
 
 @media screen and (max-width: 577px) {
