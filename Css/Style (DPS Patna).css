@@ -372,6 +372,7 @@ iframe {
 .circular {
   margin-left: 25px;
   margin-right: 10px;
+  display: none;
 }
 
 .circular .collapsible {
