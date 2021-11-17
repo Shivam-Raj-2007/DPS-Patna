@@ -404,11 +404,6 @@ iframe {
   margin-left: 5px
 }
 
-.circular .content img{
-  width: 1200px;
-  overflow: auto;
-}
-
 .download-links {
   float: right;
   background-color: #fff;
