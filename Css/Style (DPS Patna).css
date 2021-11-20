@@ -543,7 +543,7 @@ iframe {
   text-decoration: none;
 }
 
-.fas {
+.fas,.fab {
   font-size: 20px
 }
 
