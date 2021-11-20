@@ -1,3 +1,4 @@
+
 * {box-sizing: border-box}
 
 html{
@@ -268,7 +269,6 @@ iframe {
   background-color: #fff
 }
 
-
 .activity {
   margin-left: 25px;
   margin-right: 10px;
@@ -422,7 +422,7 @@ iframe {
   .circular {
     position: absolute;
     top: 2450px;
-    width: 90%;
+    width: 92%;
   }
 }
 
@@ -522,5 +522,89 @@ iframe {
 @media screen and (max-width: 325px) {
   .circular {
     top: 2700px;
+  }
+}
+
+.button-group {
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+.btn {
+  background: #d6d6d6;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.fas {
+  font-size: 20px
+}
+
+@media screen and (max-width: 769px) {
+  .button-group {
+    position: absolute;
+    top: 2900px;
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .button-group {
+    top: 2925px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .button-group {
+    top: 2950px;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .button-group {
+    top: 2975px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .button-group {
+    top: 3000px;
+  }
+}
+
+@media screen and (max-width: 407px) {
+  .button-group {
+    top: 3025px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button-group {
+    top: 3050px;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .button-group {
+    top: 3075px;
+  }
+}
+
+@media screen and (max-width: 357px) {
+  .button-group {
+    top: 3100px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .button-group {
+    top: 3125px;
   }
 }
