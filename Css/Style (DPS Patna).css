@@ -612,3 +612,10 @@ iframe {
 .size {
   font-size: 25px
 }
+
+@media screen and (max-width: 767px) {
+ .circular,.button-group {
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+}
