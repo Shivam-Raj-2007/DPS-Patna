@@ -714,8 +714,7 @@ dd a {
   font-style: italic;
   color: grey;
   margin: 0px;
-  margin-left: 25px;
-  margin-right: 10px;
+  padding-left: 16px
 }
 
 .copywrite a {
