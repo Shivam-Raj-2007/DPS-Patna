@@ -39,6 +39,11 @@ html{
    font-size: 36px;
 }
 
+.close_img {
+   height: 20px;
+   padding-left: 10px;
+}
+
 .nav-link {
   position: relative;
   left: 600;
