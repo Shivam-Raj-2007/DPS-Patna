@@ -861,3 +861,15 @@ dd a {
  body::-webkit-scrollbar-thumb:hover {
      background-color: #c6c6c6;
  }
+
+@media screen and (max-width: 767px) {
+  .app-store-1{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .app-store-2{
+    display: none;
+  }
+}
