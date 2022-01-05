@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPS Patna | Takshila</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/Style (DPS Patna).css">
+    <link rel="shortcut icon" type="image/png" href="https://dps-patna-edunext-cf.edunexttechnologies.com/1603779170180_dps_school_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <style>
+       p,h3,.img {
+        margin-left: 25px;
+        margin-right: 10px;
+      }
+
+      .lines {
+        position: fixed;
+        top: 50px;
+        left: 45px;
+        z-index: 1001;
+        font-size: 10px;
+        text-decoration: none;
+      }
+
+      .lines a {
+        text-decoration: none;
+        color: black
+      }
+
+      .img {
+        width: 500px
+      }
+
+      @media screen and (max-width: 767px){
+        .img {
+          width: 300px
+        }
+      }
+
+      @media screen and (max-width: 336px){
+        .img {
+          width: 275px
+        }
+      }
+
+      .down-container {
+        background: url(https://dpspatna.com/images/bg_patt_1.jpg);
+        padding-top: 15px;
+        color: #fff
+      }
+      .map {
+        height: 450px;
+        width: 600px;
+        border:0;
+      }
+      @media screen and (max-width: 1202px) {
+        .map {
+          width: 550px
+        }
+      }
+
+      @media screen and (max-width: 1106px) {
+        .map {
+          width: 500px
+        }
+      }
+
+      @media screen and (max-width: 1000px) {
+        .map {
+          width: 450px
+        }
+      }
+
+      @media screen and (max-width: 930px) {
+        .map {
+          width: 400px;
+        }
+      }
+
+      @media screen and (max-width: 825px) {
+        .map {
+          width: 350px;
+        }
+      }
+
+      @media screen and (max-width: 767.5px) {
+        .map {
+          display: none
+        }
+      }
+
+    </style>
+  </head>
+  <body onload="myFunction()">
+   <div id="loading"></div>
+   <div id="mySidenav" class="sidenav">
+   <div class="menu-top" id="menuTop"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="Image (DPS Patna)/close.png" class="close_img"></a></div><br><br><br>
+   <button type="button" class="collapsible collapsible-option">About</button>
+ <div class="content">
+   <a href="https://dpspatna.com/page.php?PAGE=2">About DPS Patna</a>
+   <a href="https://dpspatna.com/page.php?PAGE=3">Infrastructure</a>
+   <a href="https://dpspatna.com/page.php?PAGE=5">Academic Programme</a>
+   <a href="https://dpspatna.com/page.php?PAGE=4">Faculty</a>
+   <a href="https://dpspatna.com/page.php?PAGE=6">Co-Curricular Programme</a>
+   <a href="https://dpspatna.com/page.php?PAGE=7">Assessments</a>
+   <a href="https://dpspatna.com/page.php?PAGE=46">Transport</a>
+   <a href="https://dpspatna.com/upload/pdf/Mandatory-Public-Disclosure.pdf">Mandatory Information</a>
+  </div>
+  <a href="https://dpspatna.com/page.php?PAGE=53">Admissions</a>
+  <button type="button" class="collapsible collapsible-option">Careers</button>
+  <div class="content">
+   <a href="https://dpspatna.com/page.php?PAGE=10">Advertisement</a>
+   <a href="https://dpspatna.com/page.php?PAGE=63">Careers@DPS Patna</a>
+   <a href="https://dpspatna.com/page.php?PAGE=12">Applying to DPS</a>
+  </div>
+  <button type="button" class="collapsible collapsible-option">Info Link</button>
+  <div class="content">
+   <a href="http://www.takshila.net/">Takshila</a>
+   <a href="https://www.dpscoimbatore.com/">DPS Coimbatore</a>
+   <a href="https://www.dpspune.com/">DPS Pune</a>
+   <a href="https://www.dpsludhiana.com/">DPS Ludhiana</a>
+   <a href="https://www.cbse.gov.in/">CBSE</a>
+   <a href="https://ncert.nic.in/">NCERT</a>
+   <a href="https://spicmacay.org/">Spic Macay</a>
+  </div>
+   <a href="https://dpspatna.com/page.php?PAGE=91" class="nav-link">Alumni</a>
+   <a href="https://dpspatna.com/page.php?PAGE=55" class="nav-link">Outreach</a>
+   <button type="button" class="collapsible collapsible-option">Gallery</button>
+   <div class="content">
+    <a href="https://dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
+    <a href="https://dpspatna.com/video.php">Video Gallery</a>
+   </div>
+   <a href="https://dpspatna.com/contact.php?PAGE=31" class="nav-link">Contact</a></div>
+   <p class="lines"><a href="#">Takshila & DPS Society Initiative</a></p>
+   <nav class="navbar navbar-expand-lg navbar-light bg-white">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://dpspatna.com/images/favicon.png" height="50px" weight="75px"><b> Delhi Public School<font color="orange"> Patna</font></b></a>
+    <a href="javascript:void(0);" class="icon" onclick="openNav()"><img src="Image (DPS Patna)\menu.png" height="25px"></a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ml-auto" >
+      <li class="nav-item">
+       <div class="dropdown">
+        <button class="dropbtn">About</button>
+         <div class="dropdown-content">
+          <a href="https://dpspatna.com/page.php?PAGE=2">About DPS Patna</a>
+          <a href="https://dpspatna.com/page.php?PAGE=3">Infrastructure</a>
+          <a href="https://dpspatna.com/page.php?PAGE=5">Academic Programme</a>
+          <a href="https://dpspatna.com/page.php?PAGE=4">Faculty</a>
+          <a href="https://dpspatna.com/page.php?PAGE=6">Co-Curricular Programme</a>
+          <a href="https://dpspatna.com/page.php?PAGE=7">Assessments</a>
+          <a href="https://dpspatna.com/page.php?PAGE=46">Transport</a>
+          <a href="https://dpspatna.com/upload/pdf/Mandatory-Public-Disclosure.pdf">Mandatory Information</a>
+         </div>
+       </div>
+        <li class="nav-item">
+        <a href="https://dpspatna.com/page.php?PAGE=53" class="nav-link">Admissions</a>
+        </li>
+        <div class="dropdown">
+         <button class="dropbtn">Careers</button>
+          <div class="dropdown-content">
+           <a href="https://dpspatna.com/page.php?PAGE=10">Advertisement</a>
+           <a href="https://dpspatna.com/page.php?PAGE=63">Careers@DPS Patna</a>
+           <a href="https://dpspatna.com/page.php?PAGE=12">Applying to DPS</a>
+          </div>
+         </div>
+          <div class="dropdown">
+           <button class="dropbtn">Info Link</button>
+            <div class="dropdown-content">
+             <a href="http://www.takshila.net/">Takshila</a>
+             <a href="https://www.dpscoimbatore.com/">DPS Coimbatore</a>
+             <a href="https://www.dpspune.com/">DPS Pune</a>
+             <a href="https://www.dpsludhiana.com/">DPS Ludhiana</a>
+             <a href="https://www.cbse.gov.in/">CBSE</a>
+             <a href="https://ncert.nic.in/">NCERT</a>
+             <a href="https://spicmacay.org/">Spic Macay</a>
+            </div>
+         </div>
+          <li class="nav-item">
+          <a href="https://dpspatna.com/page.php?PAGE=91" class="nav-link">Alumni</a>
+          </li>
+          <li class="nav-item">
+          <a href="https://dpspatna.com/page.php?PAGE=55" class="nav-link">Outreach</a>
+          </li>
+          <div class="dropdown">
+            <button class="dropbtn">Gallery</button>
+            <div class="dropdown-content">
+              <a href="https://dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
+              <a href="https://dpspatna.com/video.php">Video Gallery</a>
+            </div>
+          </div>
+          <li class="nav-item">
+          <a href="https://dpspatna.com/contact.php?PAGE=31" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+<br><h3>INFRASTRUCTURE</h3><br>
+<p>Far from the bustling urban environs, DPS Patna is situated near the Army Cantonment at Danapur in village
+   Chandmari. The sylvan and pristine surroundings lend a serene touch to the impressive campus spread over several
+   acres. A marvel of modern architecture, the campus contains well-lit airy classrooms, outdoor theatre, performing
+   art block, cafeteria, spacious courtyards for indoor games, and beautifully landscaped lawns. The sprawling
+   playgrounds, the integrated sports complex, half Olympic-size swimming pool, gymnasium and the arena make the
+   school distinct in its objective of incorporating sports as a basic component of the curriculum.</p>
+   <img class="img" src="https://dpspatna.com/images/infrastructure1.jpg" alt=""><br><br>
+<p>Apart from other basic facilities which are kept clean and hygienic at all times, there are computer labs,
+   resource centers, cafeteria, and a fully equipped gymnasium. All the classrooms are networked with computers
+   and connected to servers and CD caches for instant access to a world of information. Technology plays an
+   important role in the lives of the students and is manifest in almost all activities carried out.</p>
+   <img class="img" src="https://dpspatna.com/images/infrastructure4.jpg" alt=""><br><br>
+<p>The growing need for maintaining ecological balance is keenly observed by the school and we strive to contribute
+   to keeping the Earth green and clean. Thus, rain-water harvesting, recycling of waste and creating awareness
+   about the need for green through plantations and botanical garden are just but a few initiatives carried out
+   to uphold this objective. Segregating waste into organic and inorganic is another step towards the motto of
+   RECYCLE – RECHARGE – REUSE and all students from classes Nursery to XII are imbibed with the much needed value
+   of recognizing their contribution towards minimization of carbon footprint.</p>
+   <img class="img" src="https://dpspatna.com/images/infrastructure3.jpg" alt=""><br><br>
+<p>The fleet of 54 buses which conform to the highest norms of safety and are manned by well-trained drivers
+   and assistants cater to the commuting needs of the students. Apart from unforeseen delays, the clockwork precision
+   with which the buses commute adheres clearly to the principle of punctuality.</p>
+
+   <div class="down-container">
+     <!-- Footer -->
+   <footer class="page-footer font-small blue pt-4">
+
+     <!-- Footer Links -->
+     <div class="container-fluid text-center text-md-left">
+
+       <!-- Grid row -->
+       <div class="row">
+
+         <!-- Grid column -->
+         <div class="col-md-6 mt-md-0 mt-3">
+
+           <!-- Content -->
+
+           <p><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.253076518001!2d85.01482331425183!3d25.629724820307402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed542c13163053%3A0xb0fb979bdb251e33!2sDelhi%20Public%20School%20Patna!5e0!3m2!1sen!2sin!4v1638256231029!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe></p>
+
+         </div>
+         <!-- Grid column -->
+
+
+         <!-- Grid column -->
+         <div class="col-md-3 mb-md-0 mb-3">
+
+           <!-- Links -->
+           <h5 class="text-uppercase">SCHOOL CAMPUS</h5><br>
+
+           <ul class="list-unstyled">
+             <li>
+               <b>Address</b><br>Vill. Chandmari, P.S. Shahpur<br>Danapur Cantonment<br>Patna - 801 502
+             </li>
+             <li>
+               <br><b>Phone</b><br>+91 9973811118<br>+91 9771450118
+             </li>
+             <li>
+               <br><b>Email</b><br><a href="mailto:info@dpspatna.com">info@dpspatna.com</a>
+             </li>
+             <li>
+               <br><a href="https://apps.apple.com/us/app/delhi-public-school-patna/id1011125800?ls=1">
+               <img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt="available on the app store" class="app-store-1"></a>
+             </li>
+           </ul>
+
+         </div>
+         <!-- Grid column -->
+
+         <!-- Grid column -->
+         <div class="col-md-3 mb-md-0 mb-3">
+
+           <!-- Links -->
+           <h5 class="text-uppercase">ADMINISTRATIVE OFFICE</h5><br>
+
+           <ul class="list-unstyled">
+             <li>
+               <b>Address</b><br>Priyadarshi Nagar<br>West Bailey Road<br>Patna – 801 503
+             <li>
+               <br><b>Phone</b><br>+91 9973311118<br>+91 9771440118
+             </li>
+             <li>
+               <br><b>Website</b><br><a href="https://dpspatna.com/">www.dpspatna.com</a>
+             </li>
+             <li>
+               <br><a href="https://play.google.com/store/apps/details?id=com.edunext.dpspatna">
+               <img src="Image (DPS Patna)/Google Play Store.png" alt="available on the app store" class="play-store"></a>
+               <br><br><a href="https://apps.apple.com/us/app/delhi-public-school-patna/id1011125800?ls=1">
+               <img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt="available on the app store" class="app-store-2"></a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     <div class="footer-copyright text-left py-3 copywrite">
+      © 2016-20 DPS Patna. All rights reserved. Powered by <a href="https://www.edunexttechnologies.com/">Edunext</a> and
+      <a href="#"> Shivam</a>
+     </div>
+    </footer>
+   </div>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "262px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script>
+  var preloader = document.getElementById('loading');
+
+  function myFunction() {
+    preloader.style.display = 'none';
+  }
+</script>
+</body>
+</html>
