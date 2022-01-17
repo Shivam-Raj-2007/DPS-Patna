@@ -901,6 +901,7 @@ marquee {
   white-space: nowrap;
   -webkit-animation: rightThenLeft 1s linear;
   animation-duration: infinite;
+  padding: 5px;
 }
 
 @-webkit-keyframes rightThenLeft {
