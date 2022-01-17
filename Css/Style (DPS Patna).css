@@ -175,15 +175,27 @@ html{
 .portal {
   display: inline;
   position: absolute;
-  top: 430px;
-  right: 10px;
-  width: 340px;
+  top: 500px;
+  right: 0px;
+  width: 150px;
   z-index: 999;
+  animation-name: portal;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes portal {
+  0%   {top: 500px}
+  25%  {top: 480px}
+  50%  {top: 500px}
+  100% {top: 480px}
 }
 
 @media screen and (max-width: 1040px) {
   .portal {
-    top: 575px;
+    top: 600px;
+    right: 5px;
+    animation: none;
   }
 }
 
@@ -199,8 +211,8 @@ html{
     top: 550px;
   }
   .portal {
-    top: 400px;
-    left: 0px
+    top: 450px;
+    left: 10px;
   }
 }
 
@@ -531,11 +543,11 @@ html{
   margin-right: 10px;
 }
 
-.btn {
+.group .btn {
   background: #d6d6d6;
 }
 
-.btn:hover {
+.group .btn:hover {
   background: #ddd;
 }
 
@@ -688,7 +700,7 @@ html{
 }
 
 .bottom-container {
-  background: url(../Image/bg_patt_1.jpg)#333;
+  background: url(../Image/bg_patt_1.jpg);
   padding-top: 15px;
   color: #fff
 }
@@ -876,4 +888,31 @@ dd a {
   .app-store-2{
     display: none;
   }
+}
+
+.news {
+  background: #ddd;
+  width: 100%;
+  padding: 0px;
+}
+
+.notice {
+  background: grey;
+  padding: 5px;
+  padding-bottom: 0px;
+  margin-left: 0;
+  color: white;
+  display: none
+}
+
+marquee {
+  width: 100%;
+  white-space: nowrap;
+  -webkit-animation: rightThenLeft 1s linear;
+  animation-duration: infinite;
+}
+
+@-webkit-keyframes rightThenLeft {
+  0%   {left: 10%;}
+  50%  {left: 20%;}
 }
