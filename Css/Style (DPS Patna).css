@@ -896,15 +896,6 @@ dd a {
   padding: 0px;
 }
 
-.notice {
-  background: grey;
-  padding: 5px;
-  padding-bottom: 0px;
-  margin-left: 0;
-  color: white;
-  display: none
-}
-
 marquee {
   width: 100%;
   white-space: nowrap;
