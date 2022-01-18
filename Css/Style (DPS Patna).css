@@ -5,6 +5,10 @@ html{
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .sidenav {
    height: 100%;
    width: 0px;
@@ -191,11 +195,27 @@ html{
   100% {top: 480px}
 }
 
+@keyframes portal-responsive-1 {
+  0%   {top: 640px}
+  25%  {top: 630px}
+  50%  {top: 640px}
+  100% {top: 630px}
+}
+
+@keyframes portal-responsive-2 {
+  0%   {top: 450px}
+  25%  {top: 430px}
+  50%  {top: 450px}
+  100% {top: 430px}
+}
+
 @media screen and (max-width: 1040px) {
   .portal {
-    top: 600px;
+    top: 620px;
     right: 5px;
-    animation: none;
+    animation-name: portal-responsive-1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
 }
 
@@ -213,6 +233,9 @@ html{
   .portal {
     top: 450px;
     left: 10px;
+    animation-name: portal-responsive-2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
 }
 
@@ -631,6 +654,9 @@ html{
    margin-left: 20px;
    margin-right: 20px;
  }
+ .carousel-indicators {
+   display: none;
+ }
 }
 
 .recent-event {
@@ -903,6 +929,7 @@ marquee {
   animation-duration: infinite;
   padding: 5px;
   padding-bottom: 0px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @-webkit-keyframes rightThenLeft {
