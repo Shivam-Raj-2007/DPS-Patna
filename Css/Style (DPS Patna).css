@@ -929,7 +929,6 @@ marquee {
   animation-duration: infinite;
   padding: 5px;
   padding-bottom: 0px;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 @-webkit-keyframes rightThenLeft {
