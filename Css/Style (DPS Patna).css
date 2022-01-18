@@ -183,39 +183,56 @@ body {
   right: 0px;
   width: 150px;
   z-index: 999;
-  animation-name: portal;
-  animation-duration: 4s;
+  animation-name: bounce;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
-@keyframes portal {
-  0%   {top: 500px}
-  25%  {top: 480px}
-  50%  {top: 500px}
-  100% {top: 480px}
-}
-
-@keyframes portal-responsive-1 {
-  0%   {top: 640px}
-  25%  {top: 630px}
-  50%  {top: 640px}
-  100% {top: 630px}
-}
-
-@keyframes portal-responsive-2 {
-  0%   {top: 450px}
-  25%  {top: 430px}
-  50%  {top: 450px}
-  100% {top: 430px}
-}
+        @-webkit-keyframes bounce {
+            20%, 53%, 80%, 0%, 100% {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                transform: translate3d(0, 0, 0);
+            }
+            40%, 43% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                transform: translate3d(0, -5px, 0);
+            }
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                transform: translate3d(0, -2px, 0);
+            }
+            90% {
+                transform: translate3d(0, -2px, 0);
+            }
+        }
+        @keyframes bounce {
+            20%, 53%, 80%, 0%, 100% {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                transform: translate3d(0, 0, 0);
+            }
+            40%, 43% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                transform: translate3d(0, -5px, 0);
+            }
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                transform: translate3d(0, -2px, 0);
+            }
+            90% {
+                transform: translate3d(0, -2px, 0);
+            }
+        }
 
 @media screen and (max-width: 1040px) {
   .portal {
     top: 620px;
     right: 5px;
-    animation-name: portal-responsive-1;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
   }
 }
 
@@ -233,9 +250,6 @@ body {
   .portal {
     top: 450px;
     left: 10px;
-    animation-name: portal-responsive-2;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
   }
 }
 
