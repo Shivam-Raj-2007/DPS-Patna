@@ -258,7 +258,7 @@ body {
 }
 
 .card a {
-  color: orange
+  color: #FF8B17
 }
 
 .card img {
@@ -745,7 +745,7 @@ body {
 }
 
 dd a {
-  color: orange;
+  color: #FF8B17;
   text-decoration: none;
 }
 
@@ -762,7 +762,7 @@ dd a {
 .list-unstyled li a {
   text-decoration: none;
   font-style: italic;
-  color: orange;
+  color: #FF8B17;
 }
 
 .copywrite {
@@ -774,7 +774,7 @@ dd a {
 }
 
 .copywrite a {
-  color: orange;
+  color: #FF8B17;
   text-decoration: none;
 }
 
@@ -930,9 +930,10 @@ dd a {
 }
 
 .news {
-  background: #ddd;
+  background: #FF8B17;
   width: 100%;
   padding: 0px;
+  color: #fff;
 }
 
 marquee {
