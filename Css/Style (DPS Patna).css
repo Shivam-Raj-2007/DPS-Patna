@@ -930,10 +930,9 @@ dd a {
 }
 
 .news {
-  background: #FF8B17;
+  background: #ddd;
   width: 100%;
   padding: 0px;
-  color: #fff;
 }
 
 marquee {
