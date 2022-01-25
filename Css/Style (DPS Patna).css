@@ -315,7 +315,7 @@ body {
     top: 900px;
   }
 }
-@media screen and (max-width: 667px){
+@media screen and (max-width: 670px){
   .event {
     top: 925px;
   }
@@ -327,12 +327,12 @@ body {
   }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 582px){
   .event {
     top: 975px
   }
 }
-@media screen and (max-width: 545px){
+@media screen and (max-width: 550px){
   .event {
     top: 1000px
   }
@@ -344,7 +344,7 @@ body {
   }
 }
 
-@media screen and (max-width: 481px){
+@media screen and (max-width: 484px){
   .event {
     top: 1050px;
   }
@@ -356,49 +356,49 @@ body {
   }
 }
 
-@media screen and (max-width: 434px){
+@media screen and (max-width: 435.8px){
   .event {
     top: 1100px;
   }
 }
 
-@media screen and (max-width: 405px){
+@media screen and (max-width: 417px){
   .event {
     top: 1125px;
   }
 }
 
-@media screen and (max-width: 401px){
+@media screen and (max-width: 402px){
   .event {
     top: 1150px;
   }
 }
 
-@media screen and (max-width: 364px){
+@media screen and (max-width: 383px){
   .event {
     top: 1175px;
   }
 }
 
-@media screen and (max-width: 356px){
+@media screen and (max-width: 367px){
   .event {
     top: 1200px;
   }
 }
 
-@media screen and (max-width: 338px){
+@media screen and (max-width: 357px){
   .event {
     top: 1225px;
   }
 }
 
-@media screen and (max-width: 336px){
+@media screen and (max-width: 340px){
   .event {
     top: 1250px;
   }
 }
 
-@media screen and (max-width: 324px){
+@media screen and (max-width: 330px){
   .event {
     top: 1275px;
   }
