@@ -183,6 +183,7 @@
     right: 0px;
     width: 150px;
     z-index: 999;
+    border-radius: 10px;
     animation-name: portal;
     animation-duration: 4s;
     animation-iteration-count: infinite;
