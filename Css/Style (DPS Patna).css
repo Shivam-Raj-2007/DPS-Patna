@@ -7,7 +7,7 @@
 
   body {
     font-family: 'Ubuntu', sans-serif;
-    min-width: 375px;
+    max-width: 375px;
   }
 
   .sidenav {
