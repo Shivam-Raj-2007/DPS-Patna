@@ -966,7 +966,7 @@
     display: none;
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 319px) {
     .sidenav,.navbar,.lines,.carousel,.welcome,marquee,.portal,
     .event,.circular,.button-group,.recent-event,.bottom-container{
       display: none;
