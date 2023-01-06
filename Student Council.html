@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DPS Patna | Takshila</title>
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <link rel="stylesheet" href="Css/Style (DPS Patna).css">
+   <link rel="shortcut icon" type="image/png" href="https://dps-patna-edunext-cf.edunexttechnologies.com/1603779170180_dps_school_logo.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+   <style>
+     h3{
+      font-weight: 400;
+     }
+
+     h3,p {
+       margin-left: 25px;
+       margin-right: 10px;
+     }
+
+     .lines {
+       position: fixed;
+       top: 50px;
+       left: 45px;
+       z-index: 1001;
+       font-size: 10px;
+       text-decoration: none;
+     }
+
+     .lines a {
+       text-decoration: none;
+       color: black
+     }
+
+     .down-container {
+       background: url(Image/bg_patt_1.jpg);
+       padding-top: 15px;
+       color: #fff
+     }
+
+     @media screen and (max-width: 1202px) {
+       .map {
+         width: 550px
+       }
+     }
+
+     @media screen and (max-width: 1106px) {
+       .map {
+         width: 500px
+       }
+     }
+
+     @media screen and (max-width: 1000px) {
+       .map {
+         width: 450px
+       }
+     }
+
+     @media screen and (max-width: 930px) {
+       .map {
+         width: 400px;
+       }
+     }
+
+     @media screen and (max-width: 826px) {
+       .map {
+         width: 350px;
+       }
+     }
+
+     @media screen and (max-width: 767.5px) {
+       .map {
+         display: none
+       }
+     }
+
+     .link {
+       text-decoration: underline;
+     }
+
+   </style>
+  </head>
+  <body onload="myFunction()">
+   <div id="loading"></div>
+   <div id="mySidenav" class="sidenav">
+   <div class="menu-top" id="menuTop"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="Image/close.png" class="close_img"></a></div><br><br><br>
+   <button type="button" class="collapsible collapsible-option">About</button>
+ <div class="content">
+   <a href="About DPS Patna.html">About DPS Patna</a>
+   <a href="Infrastructure.html">Infrastructure</a>
+   <a href="Academic Programme.html">Academic Programme</a>
+   <a href="Faculty.html">Faculty</a>
+   <a href="Co-Curricular Programme.html">Co-Curricular Programme</a>
+   <a href="Assessments.html">Assessments</a>
+   <a href="Transport.html">Transport</a>
+   <a href="PDF/Mandatory-Public-Disclosure.pdf">Mandatory Information</a>
+  </div>
+  <a href="Admissions.html">Admissions</a>
+  <button type="button" class="collapsible collapsible-option">Careers</button>
+  <div class="content">
+   <a href="Advertisement.html">Advertisement</a>
+   <a href="Careers@DPS Patna.html">Careers@DPS Patna</a>
+   <a href="Applying to DPS.html">Applying to DPS</a>
+  </div>
+  <button type="button" class="collapsible collapsible-option">Info Link</button>
+  <div class="content">
+   <a href="http://www.takshila.net/">Takshila</a>
+   <a href="https://www.dpscoimbatore.com/">DPS Coimbatore</a>
+   <a href="https://www.dpspune.com/">DPS Pune</a>
+   <a href="https://www.dpsludhiana.com/">DPS Ludhiana</a>
+   <a href="https://www.cbse.gov.in/">CBSE</a>
+   <a href="https://ncert.nic.in/">NCERT</a>
+   <a href="https://spicmacay.org/">Spic Macay</a>
+  </div>
+   <a href="Alumni.html" class="nav-link">Alumni</a>
+   <a href="Outreach.html" class="nav-link">Outreach</a>
+   <button type="button" class="collapsible collapsible-option">Gallery</button>
+   <div class="content">
+    <a href="http://dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
+    <a href="http://dpspatna.com/video.php">Video Gallery</a>
+   </div>
+   <a href="http://dpspatna.com/contact.php?PAGE=31" class="nav-link">Contact</a></div>
+   <p class="lines"><a href="index.html">Takshila & DPS Society Initiative</a></p>
+   <nav class="navbar navbar-expand-lg navbar-light bg-white">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="Image/favicon.png" height="50px" weight="75px"><b> Delhi Public School<font color="orange"> Patna</font></b></a>
+    <a href="javascript:void(0);" class="icon" onclick="openNav()"><img src="Image\menu.png" height="25px"></a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ml-auto" >
+      <li class="nav-item">
+       <div class="dropdown">
+        <button class="dropbtn">About</button>
+         <div class="dropdown-content">
+          <a href="About DPS Patna.html">About DPS Patna</a>
+          <a href="Infrastructure.html">Infrastructure</a>
+          <a href="Academic Programme.html">Academic Programme</a>
+          <a href="Faculty.html">Faculty</a>
+          <a href="Co-Curricular Programme.html">Co-Curricular Programme</a>
+          <a href="Assessments.html">Assessments</a>
+          <a href="Transport.html">Transport</a>
+          <a href="PDF/Mandatory-Public-Disclosure.pdf">Mandatory Information</a>
+         </div>
+       </div>
+        <li class="nav-item">
+        <a href="Admissions.html" class="nav-link">Admissions</a>
+        </li>
+        <div class="dropdown">
+         <button class="dropbtn">Careers</button>
+          <div class="dropdown-content">
+           <a href="Advertisement.html">Advertisement</a>
+           <a href="Careers@DPS Patna.html">Careers@DPS Patna</a>
+           <a href="Applying to DPS.html">Applying to DPS</a>
+          </div>
+         </div>
+          <div class="dropdown">
+           <button class="dropbtn">Info Link</button>
+            <div class="dropdown-content">
+             <a href="http://www.takshila.net/">Takshila</a>
+             <a href="https://www.dpscoimbatore.com/">DPS Coimbatore</a>
+             <a href="https://www.dpspune.com/">DPS Pune</a>
+             <a href="https://www.dpsludhiana.com/">DPS Ludhiana</a>
+             <a href="https://www.cbse.gov.in/">CBSE</a>
+             <a href="https://ncert.nic.in/">NCERT</a>
+             <a href="https://spicmacay.org/">Spic Macay</a>
+            </div>
+         </div>
+          <li class="nav-item">
+          <a href="Alumni.html" class="nav-link">Alumni</a>
+          </li>
+          <li class="nav-item">
+          <a href="Outreach.html" class="nav-link">Outreach</a>
+          </li>
+          <div class="dropdown">
+            <button class="dropbtn">Gallery</button>
+            <div class="dropdown-content">
+              <a href="http://dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
+              <a href="http://dpspatna.com/video.php">Video Gallery</a>
+            </div>
+          </div>
+          <li class="nav-item">
+          <a href="http://dpspatna.com/contact.php?PAGE=31" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+<section>
+<br><h3>STUDENT COUNCIL</h3><br>
+<p>
+  <div style="overflow-x:auto;">
+  <table style="width:100%" border="0" cellpadding="0" cellspacing="5" >
+ 	<tbody style="overflow-y: scroll;overflow-x: hidden;">
+ 		<tr>
+ 			<td style="background-color:rgb(0, 102, 102); text-align:center"><img alt="" src="Image/Student Council/AKSSHATT_BARIAR.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="background-color:rgb(0, 102, 102); text-align:center"><img alt="" src="Image/Student Council/VARUNI_PRIYA.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="background-color:rgb(0, 102, 102); text-align:center"><img alt="" src="Image/Student Council/TIA_AGARWAL.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="background-color:rgb(0, 102, 102); text-align:center"><img alt="" src="Image/Student Council/ANKUR_SINGH.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><span style="color:#FF8C00"><strong>AKSSHATT BARIAR, XII B</strong></span><br />
+ 			Head Boy</td>
+ 			<td style="text-align:center"><span style="color:#FF8C00"><strong>VARUNI PRIYA, XII C</strong></span><br />
+ 			Head Girl</td>
+ 			<td style="text-align:center"><span style="color:#FF8C00"><strong>TIA AGARWAL, XI E</strong></span><br />
+ 			Vice Head Girl</td>
+ 			<td style="text-align:center"><span style="color:#FF8C00"><strong>ANKUR SINGH, XI C</strong></span><br />
+ 			Vice Head Boy</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center">
+ 			<p><img alt="" src="Image/Student Council/AKSHAT_KASHYAP.JPG" style="height:225px; width:200px" /></p>
+ 			</td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/AYAAN_ZAHID_KHAN.JPG" style="height:225px; width:180px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/DAKSH_DUTT_MISHRA.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/YUVRAJ_SINGH.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center">
+ 			<p><strong>Akshat Kashyap, XII A</strong><br />
+ 			Cultural Secretary</p>
+ 			</td>
+ 			<td style="text-align:center"><strong>Ayaan Zahid Khan, X A</strong><br />
+ 			Cultural Secretary</td>
+ 			<td style="text-align:center"><strong>Daksh Dutt Mishra, XII E</strong><br />
+ 			Cultural Secretary</td>
+ 			<td style="text-align:center"><strong>Yuvraj Singh, X H</strong><br />
+ 			Cultural Secretary</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/MANYA_TIWARI.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/NEIL_NIVAAN.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/SARA.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/SHORYA_AKHIL.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><strong>Manya Tiwari, X H</strong><br />
+ 			Environmental Secretary</td>
+ 			<td style="text-align:center"><strong>Neil Nivaan, X I</strong><br />
+ 			Environmental Secretary</td>
+ 			<td style="text-align:center"><strong>Sara, XII D</strong><br />
+ 			Environmental Secretary</td>
+ 			<td style="text-align:center"><strong>Shorya Akhil, XI B</strong><br />
+ 			Environmental Secretary</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/MANASVI_DUBEY.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center">
+ 			<p><img alt="" src="Image/Student Council/SUDIKSHA_SAHAY.JPG" style="height:225px; width:200px" /></p>
+ 			</td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/VAIBHAV_SHEKHAR.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/VATSALA_CHOUDHARY.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><strong>Manasvi Dubey, XII A</strong><br />
+ 			Sports Secretary</td>
+ 			<td style="text-align:center"><strong>Sudiksha Sahay, X B</strong><br />
+ 			Sports Secretary</td>
+ 			<td style="text-align:center"><strong>Vaibhav Shekhar, X A</strong><br />
+ 			Sports Secretary</td>
+ 			<td style="text-align:center"><strong>Vatsala Choudhary, XI D</strong><br />
+ 			Sports Secretary</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/AKSHAT_KUMAR.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/SAMARTH_PODDAR.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/SASYAK.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/BHAVYA_KUMARI.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><strong>Akshat Kumar, VII D</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Samarth Poddar, IX B</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Sasyak, VII C</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Bhavya Kumari, VIII F</strong><br />
+ 			Prefect</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/IPSITA.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/ADITYA_SINGH.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/KAUSTUBH_KAUSHIK.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/ABHILASHA_SINGH.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><strong>Ipsita, IX I</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Aditya Singh, X C</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Kaustubh Kaushik, X A</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Abhilasha Singh, XA</strong><br />
+ 			Prefect</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/SREYASH_RAJ.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/ADHRIT_SHARAN.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/RISHAV_SHAMBHU_OJHA.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/ANWITA_DIVYA.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><strong>Sreyash Raj, VII I</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Adhrit Sharan, VIII I</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Rishav Shambhu Ojha, VIII H</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Anwita Divya, VIII G</strong><br />
+ 			Prefect</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/ARAV_TEJASWI.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/RITWIK_SARAF.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/AAMNA_AHMAD.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/ADHVIK_AGRAWAL.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><strong>Arav Tejaswi, IX C</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Ritwik Saraf, IX E</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Aamna Ahmad, IX I</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Adhvik Agrawal, VII A</strong><br />
+ 			Prefect</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/DHAN_SHREE.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/NYASA.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/AARNA_ROHIT_MAHANORI.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/SHIVANSHU_VERMA.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><strong>Dhan Shree, VII B</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Nyasa, VIII D</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Aarna Rohit Mahanori, VII F</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Shivanshu Verma, VIII I</strong><br />
+ 			Prefect</td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/SHAURYA_ATRE.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/PRIYANSH.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/RAGHAV_SINGHANIA.JPG" style="height:225px; width:200px" /></td>
+ 			<td style="text-align:center"><img alt="" src="Image/Student Council/ANUSHKA_DEEPAK_SHAHI.JPG" style="height:225px; width:200px" /></td>
+ 		</tr>
+ 		<tr>
+ 			<td style="text-align:center"><strong>Shaurya Atre, VIII E</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Priyansh, IX A</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Raghav Singhania, IX C</strong><br />
+ 			Prefect</td>
+ 			<td style="text-align:center"><strong>Anushka Deepak Shahi, VIII D</strong><br />
+ 			Prefect</td>
+ 		</tr>
+ 	</tbody>
+ </table>
+</div>
+</p>
+
+<div class="down-container">
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+
+        <p><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.253076518001!2d85.01482331425183!3d25.629724820307402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed542c13163053%3A0xb0fb979bdb251e33!2sDelhi%20Public%20School%20Patna!5e0!3m2!1sen!2sin!4v1638256231029!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe></p>
+
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">SCHOOL CAMPUS</h5><br>
+
+        <ul class="list-unstyled">
+          <li>
+            <b>Address</b><br>Vill. Chandmari, P.S. Shahpur<br>Danapur Cantonment<br>Patna - 801 502
+          </li>
+          <li>
+            <br><b>Phone</b><br>+91 9973811118<br>+91 9771450118
+          </li>
+          <li>
+            <br><b>Email</b><br><a href="mailto:info@dpspatna.com">info@dpspatna.com</a>
+          </li>
+          <li>
+            <br><a href="https://apps.apple.com/us/app/delhi-public-school-patna/id1011125800?ls=1">
+            <img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt="available on the app store" class="app-store-1"></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">ADMINISTRATIVE OFFICE</h5><br>
+
+        <ul class="list-unstyled">
+          <li>
+            <b>Address</b><br>Priyadarshi Nagar<br>West Bailey Road<br>Patna – 801 503
+          <li>
+            <br><b>Phone</b><br>+91 9973311118<br>+91 9771440118
+          </li>
+          <li>
+            <br><b>Website</b><br><a href="http://dpspatna.com/">www.dpspatna.com</a>
+          </li>
+          <li>
+            <br><a href="https://play.google.com/store/apps/details?id=com.edunext.dpspatna">
+            <img src="Image/Google Play Store.png" alt="available on the app store" class="play-store"></a>
+            <br><br><a href="https://apps.apple.com/us/app/delhi-public-school-patna/id1011125800?ls=1">
+            <img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt="available on the app store" class="app-store-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-left py-3 copywrite">
+   © 2016-20 DPS Patna. All rights reserved. Powered by <a href="https://www.edunexttechnologies.com/">Edunext</a> and
+   <a href="#"> Shivam</a>
+  </div>
+ </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity= "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+
+<script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "262px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+</script>
+<script>
+    var preloader = document.getElementById('loading');
+
+    function myFunction() {
+      preloader.style.display = 'none';
+    }
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible-option");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

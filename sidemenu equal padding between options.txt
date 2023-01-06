@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPS Patna | Takshila</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/Style (DPS Patna).css">
+    <link rel="shortcut icon" type="image/png" href="https://dps-patna-edunext-cf.edunexttechnologies.com/1603779170180_dps_school_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </head>
+  <body onload="myFunction()">
+    <div id="loading"></div>
+    <div id="mySidenav" class="sidenav">
+    <div class="menu-top" id="menuTop"><a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()"><img src="Image/close.png" class="close_img"></a></div><br><br><br>
+    <button type="button" class="collapsible collapsible-option" style="padding-bottom:0px">About</button>
+    <div class="content">
+      <a href="About DPS Patna.html">About DPS Patna</a>
+      <a href="Infrastructure.html">Infrastructure</a>
+      <a href="Academic Programme.html">Academic Programme</a>
+      <a href="Faculty.html">Faculty</a>
+      <a href="Co-Curricular Programme.html">Co-Curricular Programme</a>
+      <a href="Assessments.html">Assessments</a>
+      <a href="Transport.html">Transport</a>
+      <a href="PDF/Mandatory-Public-Disclosure.pdf">Mandatory Information</a>
+    </div>
+    <a href="Admissions.html">Admissions</a>
+    <button type="button" class="collapsible collapsible-option" style="padding-bottom:0px;padding-top:0px">Careers</button>
+    <div class="content">
+      <a href="Advertisement.html">Advertisement</a>
+      <a href="Careers@DPS Patna.html">Careers@DPS Patna</a>
+      <a href="Applying to DPS.html">Applying to DPS</a>
+    </div>
+    <button type="button" class="collapsible collapsible-option" style="padding-bottom:0px">Info Link</button>
+    <div class="content">
+      <a href="https://www.takshila.net/">Takshila</a>
+      <a href="https://www.dpscoimbatore.com/">DPS Coimbatore</a>
+      <a href="https://www.dpspune.com/">DPS Pune</a>
+      <a href="https://www.dpsludhiana.com/">DPS Ludhiana</a>
+      <a href="https://www.cbse.gov.in/">CBSE</a>
+      <a href="https://ncert.nic.in/">NCERT</a>
+      <a href="https://spicmacay.org/">Spic Macay</a>
+    </div>
+    <a href="Alumni.html" class="nav-link" style="padding-top:0px">Alumni</a>
+    <a href="Outreach.html" class="nav-link" style="padding-top:0px">Outreach</a>
+    <button type="button" class="collapsible collapsible-option" style="padding-bottom:0px">Gallery</button>
+    <div class="content">
+      <a href="http://dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
+      <a href="http://dpspatna.com/video.php">Video Gallery</a>
+    </div>
+    <a href="http://dpspatna.com/contact.php?PAGE=31" class="nav-link" style="padding-top:0px">Contact</a></div>
+    <p class="lines"><a href="#">Takshila & DPS Society Initiative</a></p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="Image/favicon.png" height="50px" weight="75px"><b> Delhi Public School<font color="orange"> Patna</font></b></a>
+    <a href="javascript:void(0);" class="icon" onclick="openNav()"><img src="Image\menu.png" height="25px"></a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ml-auto" >
+      <li class="nav-item">
+       <div class="dropdown">
+        <button class="dropbtn">About</button>
+         <div class="dropdown-content">
+          <a href="About DPS Patna.html">About DPS Patna</a>
+          <a href="Infrastructure.html">Infrastructure</a>
+          <a href="Academic Programme.html">Academic Programme</a>
+          <a href="Faculty.html">Faculty</a>
+          <a href="Co-Curricular Programme.html">Co-Curricular Programme</a>
+          <a href="Assessments.html">Assessments</a>
+          <a href="Transport.html">Transport</a>
+          <a href="PDF/Mandatory-Public-Disclosure.pdf">Mandatory Information</a>
+         </div>
+         </div>
+          <li class="nav-item">
+          <a href="Admissions.html" class="nav-link">Admissions</a>
+          </li>
+          <div class="dropdown">
+           <button class="dropbtn">Careers</button>
+            <div class="dropdown-content">
+             <a href="Advertisement.html">Advertisement</a>
+             <a href="Careers@DPS Patna.html">Careers@DPS Patna</a>
+             <a href="Applying to DPS.html">Applying to DPS</a>
+            </div>
+            </div>
+            <div class="dropdown">
+             <button class="dropbtn">Info Link</button>
+              <div class="dropdown-content">
+               <a href="https://www.takshila.net/">Takshila</a>
+               <a href="https://www.dpscoimbatore.com/">DPS Coimbatore</a>
+               <a href="https://www.dpspune.com/">DPS Pune</a>
+               <a href="https://www.dpsludhiana.com/">DPS Ludhiana</a>
+               <a href="https://www.cbse.gov.in/">CBSE</a>
+               <a href="https://ncert.nic.in/">NCERT</a>
+               <a href="https://spicmacay.org/">Spic Macay</a>
+              </div>
+              </div>
+            <li class="nav-item">
+            <a href="Alumni.html" class="nav-link">Alumni</a>
+            </li>
+            <li class="nav-item">
+            <a href="Outreach.html" class="nav-link">Outreach</a>
+            </li>
+            <div class="dropdown">
+             <button class="dropbtn">Gallery</button>
+              <div class="dropdown-content">
+               <a href="http://dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
+               <a href="http://dpspatna.com/video.php">Video Gallery</a>
+              </div>
+              </div>
+            <li class="nav-item">
+            <a href="http://dpspatna.com/contact.php?PAGE=31" class="nav-link">Contact</a>
+            </li>
+         </ul>
+      </div>
+    </div>
+  </nav><br><br>
+<section class="texts">
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+  </div><br>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Image/789541466852293.png" class="d-block w-100" alt="..." >
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/816371459956394slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image//328521459954925slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/363661459954546slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/74992slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/51754slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/72822slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/77821slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/37672slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><div class="news">
+<marquee>Check your mail for latest information.</marquee>
+</div><br>
+<div class="portal"><button class="btn btn-dark" type="button" onclick="window.location.href = 'https://dpspatna.edunexttech.com/Index';"><i class="fas fa-user-alt"></i><br>Student Portal</button></div>
+<br>
+<div class="welcome">
+  <h3><i class="fa fa-university"></i> WELCOME TO DPS PATNA</h3><br>
+    Takshila Educational Society laid the foundation of veritable learning in Patna by establishing Delhi Public School
+    in the year 1998 in a collaborative effort with the Delhi Public Schools Society, which is one of the largest
+    chains of CBSE schools in India. DPS Patna is affiliated to CBSE, New Delhi and offers schooling from Nursery
+    to Class XII. The last twenty three years have been a journey where perseverance and progress have been the
+    cornerstones. Today it can proudly claim to be one of the most sought after schools in Eastern India.Far from
+    the bustling urban environs, DPS Patna is situated near the Army Cantonment at Danapur in village Chandmari.
+    The sylvan and pristine surroundings lend a serene touch to the impressive campus spread over several acres.
+    A marvel of modern architecture, the campus contains well-lit airy classrooms, outdoor theatre, performing art
+    block, cafeteria, spacious courtyards for indoor games, and beautifully landscaped lawns.
+  </div>
+<br><br>
+<div class="event">
+  <h3><i class="fa fa-calendar-check-o"></i> UPCOMING EVENTS</h3>
+	<div class="container-fluid p-0 m-0
+				align-items-center
+				justify-content-center d-flex"
+			style="background-color: #fff;">
+
+		<!-- Row for the card-->
+		<div class="row w-100 p-0 w-0">
+      <!-- Another Column for card-->
+      <div class="col-lg-4 mb-2">
+        <div class="card mx-auto" style="width:18rem;">
+          <img class="card-img-top" src="Image/Event-1.jpg" alt="..." title="humanitiWorks">
+
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="date"><span class="dd">04</span><span class="month">AUG</span><span class="year"> 2022</span></p>
+              <a href="https://www.dpspatna.com/upcoming_event_detail.php?id=14">humanitiWorks</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!--column for card -->
+			<div class="col-lg-4 mb-2">
+				<div class="card mx-auto" style="width:18rem;">
+					<img class="card-img-top" src="Image/Event-2.png"	alt="..." title="Investiture Ceremony">
+					<div class="card-body">
+						<h5 class="card-title">
+              <p class="date"><span class="dd">28</span><span class="month">JUL</span><span class="year"> 2022</span></p>
+							<a href="http://dpspatna.com/upcoming_event_detail.php?id=9">Investiture Ceremony</a>
+						</h5>
+					</div>
+				</div>
+			</div>
+
+      <!-- Another column for card -->
+      <div class="col-lg-4 mb-2">
+        <div class="card mx-auto" style="width:18rem;">
+          <img class="card-img-top" src="Image/Event-3.jpg" alt="..." title="XXX" style="border-bottom-left-radius:15px;border-bottom-right-radius:15px">
+        </div>
+      </div>
+
+		</div>
+	</div>
+</div><br><br>
+<div class="circular">
+  <h3><i class="fas fa-newspaper size"></i> LATEST CIRCULARS</h3><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">26</span><span class="month">SEP</span><span class="year"> 2022</span></div></span>
+      <div class="text">RIP Parental Circular</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/10_RIP_PARENTAL_CIRCULAR__CLASS__XI.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">14</span><span class="month">SEP</span><span class="year"> 2022</span></div></span>
+    <div class="text">Maths Standard/Basic</div>
+    <button type="button" name="button" class="download-links"><a href="PDF/Circular_IX_Maths_Standard_Basic_202223.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">13</span><span class="month">SEP</span><span class="year"> 2022</span></div></span>
+      <div class="text">Buses For Class-IV-V</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Circulars__Special_Bus_Routes_for_Class__IVV.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">13</span><span class="month">SEP</span><span class="year"> 2022</span></div></span>
+      <div class="text">Buses For Class-I-III</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Circulars__Special_Bus_Routes_for_Class__I__III.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">06</span><span class="month">JUL</span><span class="year"> 2022</span></div></span>
+      <div class="text">Procurement of Art </div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Procurement_of_Art_Material.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+</div>
+
+<div class="button-group main">
+  <div class="button">
+    <div class="d-grid gap-2 group">
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/ATL-Website_Patna.pdf'"><i class="fas fa-robot"></i><br>ATL</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/Almanac-Patna.pdf'"><i class="fas fa-book"></i><br>Almanac</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='http://www.youtube.com/channel/UC2VNR2593UZFa2Qt28oAO4g'"><i class="fab fa-youtube"></i><br>YouTube Channel</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Application Forms.html'"><i class="fas fa-file-text"></i><br>Forms</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Mission Statement.html'"><i class="fas fa-pencil-square-o"></i><br>Mission Statement</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Newsletters.html'"><i class="fas fa-newspaper"></i><br>Newsletter</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Publications.html'"><i class="fas fa-file-text"></i><br>Publications</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/SEWA 2019-20_IX-XII Guidelines.pdf'"><i class="fas fa-image"></i><br>SEWA Guidelines</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Student Council.html'"><i class="fas fa-file-text"></i><br>Student Council</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Song Book.html'"><i class="fas fa-file-text"></i><br>Song Book</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Orbit Next Issue.html'"><i class="fas fa-book"></i><br>TES Orbit</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='http://dpspatna.com/tc.php'"><i class="fas fa-file-text"></i><br>Transfer Certificate</button>
+    </div>
+  </div>
+</div>
+<div class="button-group mobile">
+  <div class="button">
+    <div class="d-grid gap-2 group"><center>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/ATL-Website_Patna.pdf'"><i class="fas fa-robot"></i><br>ATL</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/Almanac-Patna.pdf'"><i class="fas fa-book"></i><br>Almanac</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='http://www.youtube.com/channel/UC2VNR2593UZFa2Qt28oAO4g'"><i class="fab fa-youtube"></i><br>YouTube Channel</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Application Forms.html'"><i class="fas fa-file-text"></i><br>Forms</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Mission Statement.html'"><i class="fas fa-pencil-square-o"></i><br>Mission Statement</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Newsletters.html'"><i class="fas fa-newspaper"></i><br>Newsletter</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Publications.html'"><i class="fas fa-file-text"></i><br>Publications</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/SEWA 2019-20_IX-XII Guidelines.pdf'"><i class="fas fa-image"></i><br>SEWA Guidelines</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Student Council.html'"><i class="fas fa-file-text"></i><br>Student Council</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Song Book.html'"><i class="fas fa-file-text"></i><br>Song Book</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Orbit Next Issue.html'"><i class="fas fa-book"></i><br>TES Orbit</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='http://dpspatna.com/tc.php'"><i class="fas fa-file-text"></i><br>Transfer Certificate</button></center>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div class="recent-event"><br>
+    <h3><i class="fas fa-trophy size"></i>  RECENT ACTIVITIES</h3>
+    <div class="container-fluid p-0 m-0
+          align-items-center
+          justify-content-center d-flex"
+        style="background-color: #fff;">
+
+      <!-- Row for the card-->
+      <div class="row w-100 p-0 w-0">
+
+        <!-- Column for card-->
+        <div class="col-lg-4 mb-2 bg">
+          <div class="card mx-auto" style="width:18rem;">
+            <img class="card-img-top" src="Image/Activity-1.png" alt="..." title="Robofest">
+            <div class="card-body">
+              <h5 class="card-title">
+                <p class="date"><span class="dd">18</span><span class="month">AUG</span><span class="year"> 2022</span></p>
+                <a href="Recent Activity 1.html">Robofest</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Column for card-->
+        <div class="col-lg-4 mb-2 bg">
+          <div class="card mx-auto" style="width:18rem;">
+            <img class="card-img-top" src="Image/Activity-2.png" alt="..." title="Independence Day">
+
+            <div class="card-body">
+              <h5 class="card-title">
+                <p class="date"><span class="dd">15</span><span class="month">AUG</span><span class="year"> 2022</span></p>
+                <a href="Recent Activity 2.html">Independence Day</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Another column for card -->
+        <div class="col-lg-4 mb-2">
+          <div class="card mx-auto" style="width:18rem;">
+            <img class="card-img-top" src="Image/Activity-3.png" alt="..." title="India My Pride">
+
+            <div class="card-body">
+              <h5 class="card-title">
+                <p class="date"><span class="dd">11</span><span class="month">AUG</span><span class="year"> 2022</span></p>
+                 <a href="Recent Activity 3.html">India My Pride</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+<div class="upbtn">
+  <center><a href="#TOP"><button type="button" name="button" class="btn btn-dark"><i class="fa-solid fa-arrow-up up"></i>  Go To Top</button></a></center>
+</div>
+<div class="bottom-container">
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+
+        <p><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.253076518001!2d85.01482331425183!3d25.629724820307402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed542c13163053%3A0xb0fb979bdb251e33!2sDelhi%20Public%20School%20Patna!5e0!3m2!1sen!2sin!4v1638256231029!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe></p>
+
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">SCHOOL CAMPUS</h5><br>
+
+        <ul class="list-unstyled">
+          <li>
+            <b>Address</b><br>Vill. Chandmari, P.S. Shahpur<br>Danapur Cantonment<br>Patna - 801 502
+          </li>
+          <li>
+            <br><b>Phone</b><br>+91 9973811118<br>+91 9771450118
+          </li>
+          <li>
+            <br><b>Email</b><br><a href="mailto:info@dpspatna.com">info@dpspatna.com</a>
+          </li>
+          <li>
+            <br><a href="https://apps.apple.com/us/app/delhi-public-school-patna/id1011125800?ls=1">
+            <img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt="available on the app store" class="app-store-1"></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">ADMINISTRATIVE OFFICE</h5><br>
+
+        <ul class="list-unstyled">
+          <li>
+            <b>Address</b><br>Priyadarshi Nagar<br>West Bailey Road<br>Patna – 801 503
+          <li>
+            <br><b>Phone</b><br>+91 9973311118<br>+91 9771440118
+          </li>
+          <li>
+            <br><b>Website</b><br><a href="http://dpspatna.com/">www.dpspatna.com</a>
+          </li>
+          <li>
+            <br><a href="https://play.google.com/store/apps/details?id=com.edunext.dpspatna">
+            <img src="Image/Google Play Store.png" alt="available on the app store" class="play-store"></a>
+            <br><br><a href="https://apps.apple.com/us/app/delhi-public-school-patna/id1011125800?ls=1">
+            <img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt="available on the app store" class="app-store-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-left py-3 copywrite">
+   © 2016-20 DPS Patna. All rights reserved. Powered by <a href="https://www.edunexttechnologies.com/">Edunext</a> and
+   <a href="#"> Shivam</a>
+  </div>
+ </footer>
+</div>
+
+</section>
+<div class="responsive-text">
+  <img src="Image/404 favicon.png" alt=""><br>
+  <b>Not Supported</b>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity= "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "262px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible-option");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+  var preloader = document.getElementById('loading');
+
+  function myFunction() {
+    preloader.style.display = 'none';
+  }
+</script>
+</body>
+</html>
