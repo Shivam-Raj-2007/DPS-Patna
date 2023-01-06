@@ -913,7 +913,7 @@
   }
 
   @media screen and (max-width: 319px) {
-    .sidenav,.navbar,.lines,.carousel,.welcome,marquee,.portal,.img,.img img
+    .sidenav,.navbar,.lines,.carousel,.welcome,marquee,.portal,.GSPLogo,.GSPLogo img
     .event,.circular,.button-group,.recent-event,.bottom-container,.upbtn{
       display: none;
     }
@@ -1002,7 +1002,7 @@
    }
  }
 
-  .img {
+  .GSPLogo {
     margin-left: 25px;
     margin-right: 10px;
     border: solid 10px #75a86e;
@@ -1013,12 +1013,9 @@
     border-radius: 15px;
  }
 
-  .img img {
-    width: 120px;
-  }
 
    @media screen and (max-width: 768px) {
-     .img {
+     .GSPLogo {
        top: 420px;
        right: 0px !important
      }
