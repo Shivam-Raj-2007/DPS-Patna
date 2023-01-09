@@ -1,1022 +1,530 @@
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-
-  body {
-    font-family: 'Ubuntu', sans-serif;
-  }
-
-  .sidenav {
-     height: 100%;
-     width: 0px;
-     position: fixed;
-     z-index: 1005;
-     top: 0;
-     right: 0;
-     background-color: #fff;
-     overflow-x: hidden;
-     transition: 0.5s;
-     padding-top: 60px;
-
-  }
-
-  .sidenav a {
-     padding: 8px 8px 8px 32px;
-     text-decoration: none;
-     font-size: 25px;
-     color: #818181;
-     display: block;
-     transition: 0.3s;
-  }
-
-  .sidenav a:hover {
-     color: #4C4C4C;
-  }
-
-  .sidenav .closebtn {
-     position: absolute;
-     top: 0;
-     right: 0px;
-     font-size: 36px;
-  }
-
-  .close_img {
-     height: 17px;
-     padding-right: 5px;
-  }
-
-  .nav-link {
-    position: relative;
-    left: 600;
-    top: 8px;
-  }
-
-  .dropbtn {
-    background-color: #fff;
-    color: grey;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {background-color: #ddd;}
-
-  .dropdown:hover .dropdown-content {display: block;}
-
-  .dropbtn:hover {color: #4C4C4C}
-
-  @media screen and (min-height: 50px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
-  @media screen and (min-width: 992px) {
-    .icon {
-      display: none
-    }
-  }
-
-  @media screen and (max-width: 768px){
-    img {
-      max-height: 300px
-    }
-  }
-
-
-  .navbar-brand {
-    z-index: 1005;
-  }
-
-  .navbar {
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-  }
-
-  .lines {
-    position: fixed;
-    top: 50px;
-    left: 69px;
-    z-index: 1001;
-    font-size: 10px;
-    text-decoration: none;
-  }
-
-  .lines a {
-    text-decoration: none;
-    color: black
-  }
-
-  .collapsible {
-    font-size: 18px;
-    background-color: #fff;
-    color: #818181;
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    padding: 8px 8px 8px 32px;
-    transition: max-height 0.2s ease-out;
-  }
-
-  .collapsible:hover {
-    color: #4c4c4c
-  }
-
-  .content {
-    display: none;
-    overflow: hidden;
-    color: #40514E;
-    text-align: left;
-    padding: 8px 8px 8px 10px
-  }
-
-  .carousel-item img {
-    height: 500px;
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  @media screen and (max-width: 368px) {
-    .navbar-brand {
-      font-size: 18px;
-      z-index: 0
-    }
-  }
-
-  @media screen and (max-width: 343px) {
-    .navbar-brand {
-      font-size: 16px;
-      z-index: 0
-    }
-  }
-
-  .portal {
-    display: inline;
-    position: absolute;
-    top: 500px;
-    right: 0px;
-    width: 150px;
-    z-index: 999;
-    border-radius: 15px;
-    animation-name: jump;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes jump {
-    0%   {top: 500px}
-    25%  {top: 480px}
-    50%  {top: 500px}
-    100% {top: 480px}
-  }
-
-  @keyframes portal-responsive-1 {
-    0%   {top: 640px}
-    25%  {top: 630px}
-    50%  {top: 640px}
-    100% {top: 630px}
-  }
-
-  @keyframes portal-responsive-2 {
-    0%   {top: 450px}
-    25%  {top: 430px}
-    50%  {top: 450px}
-    100% {top: 430px}
-  }
-
-  @media screen and (max-width: 1040px) {
-    .portal {
-      right: 5px;
-      animation-name: portal-responsive-1;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-    }
-  }
-
-  .welcome {
-    z-index: 998;
-    margin-left: 25px;
-    margin-right: 10px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .welcome {
-      position: absolute;
-      top: 550px;
-    }
-    .portal {
-      right: 0px;
-      animation-name: portal-responsive-2;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-    }
-  }
-
-  .event {
-    margin-left: 25px;
-    margin-right: 10px;
-  }
-
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 300px;
-    text-align: center;
-    border-radius: 15px;
-  }
-
-  .card a {
-    color: #FF8B17
-  }
-
-  .card img {
-    border-radius: 15px 15px 0px 0px;
-  }
-
-  .date {
-    color: grey;
-    font-size: 20px;
-    position: relative;
-  }
-
-  .dd {
-    display: inline-block;
-    font-size: 40px;
-  }
-
-  .month {
-    position: absolute;
-    top: 8px;
-    left: 150px;
-    font-size: 15px
-  }
-
-  .card{
-    margin: 5% 0%;
-  }
-
-  .card-body{
-    margin: 0% 0% 0% 3%;
-    padding: 6% 0%;
-  }
-
-  .card-title a {
-    text-decoration: none;
-    color: #000;
-  }
-
-  @media screen and (max-width: 768px) {
-    .event {
-      position: absolute;
-      top: 875px;
-    }
-  }
-
-  @media screen and (max-width: 735px) {
-    .event {
-      position: absolute;
-      top: 900px;
-    }
-  }
-
-  @media screen and (max-width: 670px){
-    .event {
-      top: 925px;
-    }
-  }
-
-  @media screen and (max-width: 617px){
-    .event {
-      top: 950px
-    }
-  }
-
-  @media screen and (max-width: 575px){
-    .event {
-      top: 975px
-    }
-  }
-  @media screen and (max-width: 550px){
-    .event {
-      top: 1000px
-    }
-  }
-
-  @media screen and (max-width: 517px){
-    .event {
-      top: 1025px;
-    }
-  }
-
-  @media screen and (max-width: 475px){
-    .event {
-      top: 1050px;
-    }
-  }
-
-  @media screen and (max-width: 448px){
-    .event {
-      top: 1075px;
-    }
-  }
-
-  @media screen and (max-width: 407px){
-    .event {
-      top: 1100px;
-    }
-  }
-
-  @media screen and (max-width: 393px){
-    .event {
-      top: 1125px;
-    }
-  }
-
-  @media screen and (max-width: 373px){
-    .event {
-      top: 1150px;
-    }
-  }
-
-  @media screen and (max-width: 357px){
-    .event {
-      top: 1175px;
-    }
-  }
-
-  @media screen and (max-width: 352px){
-    .event {
-      top: 1200px;
-    }
-  }
-
-  @media screen and (max-width: 346px){
-    .event {
-      top: 1225px;
-    }
-  }
-
-  @media screen and (max-width: 330px){
-    .event {
-      top: 1250px;
-    }
-  }
-
-  @media screen and (max-width: 320px){
-    .event {
-      top: 1275px;
-    }
-  }
-
-  .circular {
-    margin-left: 25px;
-    margin-right: 10px;
-  }
-
-  .circular .collapsible {
-    background-color: #ddd;
-    color: black;
-    padding: 0px;
-    border-radius: 15px;
-  }
-
-  .collapsible .date {
-    color: #fff;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-right: solid white;
-    display: inline-block;
-    background-color: #FF8B17;
-    padding: 10px
-  }
-
-  .collapsible .date .month {
-    position: absolute;
-    left: 65px;
-    top: 20px
-  }
-
-  .collapsible .text {
-    display: inline-block;
-    position: relative;
-    top: -8px;
-    margin-left: 5px
-  }
-
-  .download-links {
-    float: right;
-    background-color: #fff;
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 17px;
-  }
-
-  .download-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 15px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .circular {
-      position: absolute;
-      top: 2350px;
-      width: 92%;
-    }
-  }
-
-  @media screen and (max-width: 580px) {
-    .text {
-      font-size: 15px
-    }
-  }
-
-  @media screen and (max-width: 534px) {
-    .circular {
-      position: absolute;
-      top: 2380px;
-      width: 92%;
-    }
-    .text {
-      font-size: 13px
-    }
-  }
-
-  @media screen and (max-width: 523px) {
-    .circular {
-      top: 2400px;
-    }
-  }
-
-  @media screen and (max-width: 510px) {
-    .pdf {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 475px) {
-    .text {
-      font-size: 12px
-    }
-  }
-
-  @media screen and (max-width: 453px) {
-    .text {
-      font-size: 11px
-    }
-    .circular {
-      top: 2450px;
-    }
-  }
-
-  @media screen and (max-width: 416px) {
-    .download {
-      display: none;
-    }
-    .circular {
-      top: 2450px;
-    }
-  }
-
-  @media screen and (max-width: 427px) {
-    .circular {
-      top: 2475px;
-    }
-  }
-
-  @media screen and (max-width: 397px) {
-    .circular {
-      top: 2500px;
-    }
-  }
-
-  @media screen and (max-width: 365px) {
-    .circular {
-      top: 2525px;
-    }
-  }
-
-  @media screen and (max-width: 350px) {
-    .circular {
-      top: 2550px;
-    }
-  }
-
-  @media screen and (max-width: 332px) {
-    .circular {
-      top: 2585px;
-    }
-  }
-
-  @media screen and (max-width: 338px) {
-    .text {
-      font-size: 9px
-    }
-  }
-
-  @media screen and (max-width: 324px) {
-    .text {
-      font-size: 8px
-    }
-  }
-
-  .button-group {
-    margin-left: 25px;
-    margin-right: 10px;
-  }
-
-  .group .btn {
-    background: #d6d6d6;
-  }
-
-  .group .btn:hover {
-    background: #ddd;
-  }
-
-  .link {
-    color: black;
-    text-decoration: none;
-  }
-
-  .fas,.fab {
-    font-size: 20px
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  @media screen and (max-width: 768px){
-    .mobile {
-     display: block;
-     width: 100%
-    }
-    .main {
-      display: none;
-      left: 0px
-    }
-  }
-
-  .d-grid {
-    display: grid;
-  }
-
-  .button-group {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .mobile .button .d-grid {
-    float: left;
-  }
-
-  .mobile .button .d-grid .btn {
-    border-radius: 10px;
-    width: 92%;
-    margin-bottom: 10px
-  }
-
-  @media screen and (min-width: 768px) {
-    .button-group {
-      margin: 20px
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .button-group {
-      position: absolute;
-      top: 2900px;
-      left: -25px
-    }
-  }
-
-  @media screen and (max-width: 533px) {
-    .button-group {
-
-      left: -17px
-    }
-  }
-
-  @media screen and (max-width: 447px) {
-    .button-group {
-      top: 3000px
-    }
-  }
-
-  @media screen and (max-width: 365px) {
-    .button-group {
-      top: 3050px
-    }
-  }
-
-  @media screen and (max-width: 333px) {
-    .button-group {
-      top: 3100px
-    }
-  }
-
-  .size {
-    font-size: 25px
-  }
-
-  @media screen and (max-width: 767px) {
-   .circular,.button-group {
-     margin-left: 20px;
-     margin-right: 20px;
-   }
-   .carousel-indicators {
-     display: none;
-   }
-  }
-
-  .recent-event {
-    margin-left: 25px;
-    margin-right: 10px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .recent-event {
-      position: absolute;
-      top: 3775px;
-    }
-  }
-
-  @media screen and (max-width: 447px) {
-    .recent-event {
-      top: 3850px;
-    }
-  }
-
-
-  @media screen and (max-width: 365px) {
-    .recent-event {
-      top: 3900px;
-    }
-  }
-
-  @media screen and (max-width: 333px) {
-    .recent-event {
-      top: 3950px;
-    }
-  }
-
-  .bottom-container {
-    background: url(../Image/bg_patt_1.jpg);
-    padding-top: 15px;
-    color: #fff;
-  }
-
-  dd a {
-    color: #FF8B17;
-    text-decoration: none;
-  }
-
-  .mx-auto h3 {
-    font-weight: lighter;
-  }
-
-  .map {
-    height: 450px;
-    width: 600px;
-    border:0;
-  }
-
-  .list-unstyled li a {
-    text-decoration: none;
-    font-style: italic;
-    color: #FF8B17;
-  }
-
-  .copywrite {
-    background: #000;
-    font-style: italic;
-    color: grey;
-    margin: 0px;
-    padding-left: 16px
-  }
-
-  .copywrite a {
-    color: #FF8B17;
-    text-decoration: none;
-  }
-
-  @media screen and (max-width: 1202px) {
-    .map {
-      width: 550px
-    }
-  }
-
-  @media screen and (max-width: 1106px) {
-    .map {
-      width: 500px
-    }
-  }
-
-  @media screen and (max-width: 1000px) {
-    .map {
-      width: 450px
-    }
-  }
-
-  @media screen and (max-width: 930px) {
-    .map {
-      width: 400px;
-    }
-  }
-
-  @media screen and (max-width: 825px) {
-    .map {
-      width: 350px;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .bottom-container {
-      position: absolute;
-      top: 5200px;
-      width: 100%
-    }
-  }
-
-
-  @media screen and (max-width: 580px) {
-    .bottom-container {
-      top: 5100px;
-    }
-  }
-
-  @media screen and (max-width: 767.5px) {
-    .map {
-      width: 650px
-    }
-  }
-
-  @media screen and (max-width: 688px) {
-    .map {
-      width: 600px
-    }
-  }
-
-  @media screen and (max-width: 625px) {
-    .map {
-      width: 550px
-    }
-  }
-
-  @media screen and (max-width: 572px) {
-    .map {
-      width: 500px
-    }
-  }
-
-  @media screen and (max-width: 447px) {
-    .bottom-container {
-      top: 5150px
-    }
-  }
-
-  @media screen and (max-width: 365px) {
-    .bottom-container {
-      top: 5200px
-    }
-  }
-
-  @media screen and (max-width: 521px) {
-    .map {
-      width: 450px
-    }
-  }
-
-
-  @media screen and (max-width: 472px) {
-    .map {
-      width: 400px
-    }
-  }
-
-  @media screen and (max-width: 421px) {
-    .map {
-      display: none;
-    }
-  }
-
-   body::-webkit-scrollbar {
-       width: 12px;
-   }
-
-   body::-webkit-scrollbar-track {
-       background-color: #fff;
-   }
-
-   body::-webkit-scrollbar-thumb {
-       background-color: rgb(44, 56, 12, 0.16);
-   }
-
-   body::-webkit-scrollbar-thumb:hover {
-       background-color: #c6c6c6;
-   }
-
-  .app-store-2,.app-store-1,.play-store {
-    height: 50px;
-  }
-
-  @media screen and (max-width: 767px) {
-    .app-store-1{
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: 767px) {
-    .app-store-2{
-      display: none;
-    }
-  }
-
-  .news {
-    background: #ddd;
-    width: 100%;
-    padding: 0px;
-  }
-
-  marquee {
-    width: 100%;
-    white-space: nowrap;
-    -webkit-animation: rightThenLeft 1s linear;
-    animation-duration: infinite;
-    padding: 5px;
-    padding-bottom: 0px;
-  }
-
-  @-webkit-keyframes rightThenLeft {
-    0%   {left: 10%;}
-    50%  {left: 20%;}
-  }
-
-  .responsive-text {
-    display: none;
-  }
-
-  @media screen and (max-width: 319px) {
-    img,p,div,h3,h2,h1,h4,h5,h6,.sidenav,.navbar,.lines,.carousel,.welcome,marquee,.portal,.GSPLogo,.GSPLogo img
-    .event,.circular,.button-group,.recent-event,.bottom-container,.upbtn{
-      display: none;
-    }
-    .responsive-text {
-      display: block;
-      position: fixed;
-      top: 25%;
-      width: 100%;
-      font-size: 15px;
-      text-align: center;
-      background: #ffcccb;
-      border-radius: 15px;
-      padding: 10px;
-     }
-     .responsive-text img{
-       display: inline;
-     }
-    }
-
-    @media screen and (max-width: 219px) {
-      .responsive-text img {
-        display: none;
-      }
-    }
-
-  @media screen and (max-width: 320px) {
-    .responsive-text {
-      top: 50%;
-    }
-  }
-
-  .main .d-grid {
-    display: flex !important;
-    overflow-x: auto;
-    height: 150px
-  }
-
-  .button .btn {
-    width: 300px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 75px;
-    padding-right: 75px;
-    border-radius: 20px;
-  }
-
-  .d-grid::-webkit-scrollbar {
-    width: 12px;
-  }
-
- .d-grid::-webkit-scrollbar-track {
-    background-color: #fff;
-    display: none;
- }
-
- .d-grid::-webkit-scrollbar-thumb {
-    background-color: black;
-    border-radius: 100px
- }
-
- .d-grid::-webkit-scrollbar-thumb:hover {
-    background-color: grey;
- }
-
- .upbtn {
-   display: block;
-   margin: 15px;
- }
-
- .upbtn button {
-   height: 50px;
-   width: 375px;
- }
-
- .upbtn button a {
-   color: #fff;
-   text-decoration: none;
-   padding: 20px;
- }
-
- .up {
-   margin-left: 0px;
-   margin-right: 5px
- }
-
- @media screen and (max-width: 768px) {
-   .upbtn{
-     display: none;
-   }
- }
-
- @media screen and (max-width: 340px) {
-   .event .card,.recent-event .card{
-     margin-left: -10px !important
-   }
- }
-
-  .GSPLogo {
-    margin-left: 25px;
-    margin-right: 10px;
-    border: solid 10px #75a86e;
-    position: absolute;
-    top: 440px;
-    width: 120px;
-    z-index: 999;
-    border-radius: 15px;
-  }
-
-   @media screen and (max-width: 768px) {
-    .GSPLogo {
-      top: 420px;
-      left: 0px;
-   }
- }
-
-   @media screen and (max-width: 768px) {
-     .welcome,.event,.circular,.mobile,.recent-event,.GSPLogo {
-       margin-left: 15px
-     }
-    }
-
-    #loading{
-       position: fixed;
-       width: 100%;
-       height: 100%;
-       background: #fff
-       url('https://raw.githubusercontent.com/Shivam-Raj-2007/DPS-Patna/main/Image/Loader.gif')
-       no-repeat center;
-       z-index: 99999;
-       overflow: hidden;
-     }
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPS Patna | Takshila</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/Style (DPS Patna).css">
+    <link rel="shortcut icon" type="image/png" href="https://dps-patna-edunext-cf.edunexttechnologies.com/1603779170180_dps_school_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </head>
+  <body onload="myFunction()">
+<div id="loading"></div>
+    <div id="mySidenav" class="sidenav">
+    <div class="menu-top" id="menuTop"><a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()"><img src="Image/close.png" class="close_img"></a></div><br><br><br>
+    <button type="button" class="collapsible collapsible-option">About</button>
+    <div class="content">
+      <a href="About DPS Patna.html">About DPS Patna</a>
+      <a href="Infrastructure.html">Infrastructure</a>
+      <a href="Academic Programme.html">Academic Programme</a>
+      <a href="Faculty.html">Faculty</a>
+      <a href="Co-Curricular Programme.html">Co-Curricular Programme</a>
+      <a href="Assessments.html">Assessments</a>
+      <a href="Transport.html">Transport</a>
+      <a href="PDF/Mandatory-Public-Disclosure.pdf">Mandatory Information</a>
+    </div>
+    <a href="Admissions.html">Admissions</a>
+    <button type="button" class="collapsible collapsible-option">Careers</button>
+    <div class="content">
+      <a href="Advertisement.html">Advertisement</a>
+      <a href="Careers@DPS Patna.html">Careers@DPS Patna</a>
+      <a href="Applying to DPS.html">Applying to DPS</a>
+    </div>
+    <button type="button" class="collapsible collapsible-option">Info Link</button>
+    <div class="content">
+      <a href="https://www.takshila.net/">Takshila</a>
+      <a href="https://www.dpscoimbatore.com/">DPS Coimbatore</a>
+      <a href="https://www.dpspune.com/">DPS Pune</a>
+      <a href="https://www.dpsludhiana.com/">DPS Ludhiana</a>
+      <a href="https://www.cbse.gov.in/">CBSE</a>
+      <a href="https://ncert.nic.in/">NCERT</a>
+      <a href="https://spicmacay.org/">Spic Macay</a>
+    </div>
+    <a href="Alumni.html" class="nav-link">Alumni</a>
+    <a href="Outreach.html" class="nav-link">Outreach</a>
+    <button type="button" class="collapsible collapsible-option">Gallery</button>
+    <div class="content">
+      <a href="http://dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
+      <a href="http://dpspatna.com/video.php">Video Gallery</a>
+    </div>
+    <a href="http://dpspatna.com/contact.php?PAGE=31" class="nav-link">Contact</a></div>
+    <p class="lines"><a href="#">Takshila & DPS Society Initiative</a></p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="Image/favicon.png" height="50px" weight="75px"><b> Delhi Public School<font color="orange"> Patna</font></b></a>
+    <a href="javascript:void(0);" class="icon" onclick="openNav()"><img src="Image\menu.png" height="25px"></a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ml-auto" >
+      <li class="nav-item">
+       <div class="dropdown">
+        <button class="dropbtn">About</button>
+         <div class="dropdown-content">
+          <a href="About DPS Patna.html">About DPS Patna</a>
+          <a href="Infrastructure.html">Infrastructure</a>
+          <a href="Academic Programme.html">Academic Programme</a>
+          <a href="Faculty.html">Faculty</a>
+          <a href="Co-Curricular Programme.html">Co-Curricular Programme</a>
+          <a href="Assessments.html">Assessments</a>
+          <a href="Transport.html">Transport</a>
+          <a href="PDF/Mandatory-Public-Disclosure.pdf">Mandatory Information</a>
+         </div>
+         </div>
+          <li class="nav-item">
+          <a href="Admissions.html" class="nav-link">Admissions</a>
+          </li>
+          <div class="dropdown">
+           <button class="dropbtn">Careers</button>
+            <div class="dropdown-content">
+             <a href="Advertisement.html">Advertisement</a>
+             <a href="Careers@DPS Patna.html">Careers@DPS Patna</a>
+             <a href="Applying to DPS.html">Applying to DPS</a>
+            </div>
+            </div>
+            <div class="dropdown">
+             <button class="dropbtn">Info<font color="#fff">_</font>Link</button>
+              <div class="dropdown-content">
+               <a href="https://www.takshila.net/">Takshila</a>
+               <a href="https://www.dpscoimbatore.com/">DPS Coimbatore</a>
+               <a href="https://www.dpspune.com/">DPS Pune</a>
+               <a href="https://www.dpsludhiana.com/">DPS Ludhiana</a>
+               <a href="https://www.cbse.gov.in/">CBSE</a>
+               <a href="https://ncert.nic.in/">NCERT</a>
+               <a href="https://spicmacay.org/">Spic Macay</a>
+              </div>
+              </div>
+            <li class="nav-item">
+            <a href="Alumni.html" class="nav-link">Alumni</a>
+            </li>
+            <li class="nav-item">
+            <a href="Outreach.html" class="nav-link">Outreach</a>
+            </li>
+            <div class="dropdown">
+             <button class="dropbtn">Gallery</button>
+              <div class="dropdown-content">
+               <a href="http://dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
+               <a href="http://dpspatna.com/video.php">Video Gallery</a>
+              </div>
+              </div>
+            <li class="nav-item">
+            <a href="http://dpspatna.com/contact.php?PAGE=31" class="nav-link">Contact</a>
+            </li>
+         </ul>
+      </div>
+    </div>
+  </nav><br><br>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+</div><br>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Image/789541466852293.png" class="d-block w-100" alt="..." >
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/816371459956394slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image//328521459954925slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/72822slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/77821slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/37672slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/704421666086607slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+    <div class="carousel-item">
+      <img src="Image/160501666086572slider.jpg" class="d-block w-100" alt="...">
+      <!--<div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>-->
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><div class="news">
+<marquee>As per order by District Administration, physical classes of Nursery - IX suspended till 7.1.23. Online Classes will be conducted. Please check mail for details.
+Pre-Board II Examinations of Classes X and XII will be conducted in school, as scheduled. Timing 9:00 am – 1:00 pm. First Stop 8:00 am. Please check mail for details.
+Physical Classes will be conducted for Class XI in school. Timing 9:00 am – 1:00 pm. First Stop 8:00 am. Please check mail for details and bus routes.</marquee>
+</div><br>
+<div class="portal"><button class="btn btn-dark" type="button" onclick="window.location.href = 'https://dpspatna.edunexttech.com/Index';"><i class="fas fa-user-alt"></i><br>Student Portal</button></div>
+<div><a href="https://www.greenschoolsprogramme.org/"><img class="GSPLogo" src="Image/GSPLogocolour.jpg"></a></div>
+<br>
+<div class="welcome">
+  <h3><i class="fa fa-university"></i> WELCOME TO DPS PATNA</h3><br>
+    Takshila Educational Society laid the foundation of veritable learning in Patna by establishing Delhi Public School
+    in the year 1998 in a collaborative effort with the Delhi Public Schools Society, which is one of the largest
+    chains of CBSE schools in India. DPS Patna is affiliated to CBSE, New Delhi and offers schooling from Nursery
+    to Class XII. The last twenty three years have been a journey where perseverance and progress have been the
+    cornerstones. Today it can proudly claim to be one of the most sought after schools in Eastern India.Far from
+    the bustling urban environs, DPS Patna is situated near the Army Cantonment at Danapur in village Chandmari.
+    The sylvan and pristine surroundings lend a serene touch to the impressive campus spread over several acres.
+    A marvel of modern architecture, the campus contains well-lit airy classrooms, outdoor theatre, performing art
+    block, cafeteria, spacious courtyards for indoor games, and beautifully landscaped lawns.
+  </div>
+<br><br>
+<div class="event">
+  <h3><i class="fa fa-calendar-check-o"></i> UPCOMING EVENTS</h3>
+	<div class="container-fluid p-0 m-0
+				align-items-center
+				justify-content-center d-flex"
+			style="background-color: #fff;">
+
+		<!-- Row for the card-->
+		<div class="row w-100 p-0 w-0">
+      <!-- Another Column for card-->
+      <div class="col-lg-4 mb-2">
+        <div class="card mx-auto" style="width:18rem;">
+          <img class="card-img-top" src="Image/Event-1.png" alt="..." title="humanitiWorks">
+
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="date"><span class="dd">08</span><span class="month">FEB</span><span class="year"> 2023</span></p>
+              <a href="https://www.dpspatna.com/upcoming_event_detail.php?id=14">Open Mic 2023</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!--column for card -->
+			<div class="col-lg-4 mb-2">
+				<div class="card mx-auto" style="width:18rem;">
+					<img class="card-img-top" src="Image/Event-2.png"	alt="..." title="Investiture Ceremony">
+					<div class="card-body">
+						<h5 class="card-title">
+              <p class="date"><span class="dd">12</span><span class="month">JAN</span><span class="year"> 2023</span></p>
+							<a href="http://dpspatna.com/upcoming_event_detail.php?id=9">Hindvi International Competition</a>
+						</h5>
+					</div>
+				</div>
+			</div>
+
+      <!-- Another column for card -->
+      <div class="col-lg-4 mb-2">
+        <div class="card mx-auto" style="width:18rem;">
+          <img class="card-img-top" src="Image/Event-3.jpg" alt="..." title="XXX" style="border-bottom-left-radius:15px;border-bottom-right-radius:15px">
+        </div>
+      </div>
+
+		</div>
+	</div>
+</div><br><br>
+<div class="circular">
+  <h3><i class="fas fa-newspaper size"></i> LATEST CIRCULARS</h3><br>
+  <div class="d-grid" style="overflow-y: scroll;overflow-x: hidden;background: #F0F0F0;height: 400px;border-radius: 15px;">
+  <div type="button" class="collapsible"><div class="date"><span class="dd">06</span><span class="month">JUL</span><span class="year"> 2022</span></div></span>
+      <div class="text">Preboard-II (X & XII)</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Circular__PreboardII_for_X_and_XII.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">05</span><span class="month">DEC</span><span class="year"> 2022</span></div></span>
+      <div class="text">PT2 for VI-IX & XI</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Mid_Term_Examination_PT2_for_classes_VIIX_and_XI_is_scheduled.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">05</span><span class="month">DEC</span><span class="year"> 2022</span></div></span>
+      <div class="text">PT2 Circular(IV-V)</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Mid_Term_Examination_PT2_for_classes_IVVscheduled.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">28</span><span class="month">NOV</span><span class="year"> 2022</span></div></span>
+      <div class="text">Khoj for Class-VII</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Khoj_Newsletter_ClassVII.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">28</span><span class="month">NOV</span><span class="year"> 2022</span></div></span>
+      <div class="text">Khoj for Class-VI</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Khoj_Newsletter_ClassVI.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">28</span><span class="month">NOV</span><span class="year"> 2022</span></div></span>
+      <div class="text">Khoj for Class-V</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Khoj_Newsletter_ClassV.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">22</span><span class="month">NOV</span><span class="year"> 2022</span></div></span>
+      <div class="text">Preboard-I for X & XII</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Circular_for_PreboardI_for_Classes_X_and_XII.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">04</span><span class="month">Nov</span><span class="year"> 2022</span></div></span>
+      <div class="text">Aryabhatta Challenge</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Aryabhatta_Ganit_Challenge__Circular_2022.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">26</span><span class="month">SEP</span><span class="year"> 2022</span></div></span>
+      <div class="text">RIP Parental Circular</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/10_RIP_PARENTAL_CIRCULAR__CLASS__XI.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">14</span><span class="month">SEP</span><span class="year"> 2022</span></div></span>
+    <div class="text">Maths Standard/Basic</div>
+    <button type="button" name="button" class="download-links"><a href="PDF/Circular_IX_Maths_Standard_Basic_202223.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">13</span><span class="month">SEP</span><span class="year"> 2022</span></div></span>
+      <div class="text">Buses For Class-IV-V</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Circulars__Special_Bus_Routes_for_Class__IVV.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">13</span><span class="month">SEP</span><span class="year"> 2022</span></div></span>
+      <div class="text">Buses For Class-I-III</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Circulars__Special_Bus_Routes_for_Class__I__III.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br><br>
+  <div type="button" class="collapsible"><div class="date"><span class="dd">06</span><span class="month">JUL</span><span class="year"> 2022</span></div></span>
+      <div class="text">Procurement of Art</div>
+      <button type="button" name="button" class="download-links"><a href="PDF/Procurement_of_Art_Material.pdf" download rel="noopener noreferrer" target="_blank"><i class="fas fa-download icons"></i> <span class="download">Download</span> <span class="pdf">PDF</span></a></button></div><br>
+ </div>
+</div><br>
+
+<div class="button-group main" style="background: #F0F0F0;border-radius: 15px;">
+  <div class="button">
+    <div class="d-grid gap-2 group">
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/ATL-Website_Patna.pdf'"><i class="fas fa-robot"></i><br>ATL</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/Almanac-Patna.pdf'"><i class="fas fa-book"></i><br>Almanac</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='http://www.youtube.com/channel/UC2VNR2593UZFa2Qt28oAO4g'"><i class="fab fa-youtube"></i><br>YouTube Channel</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Application Forms.html'"><i class="fas fa-file-text"></i><br>Forms</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Mission Statement.html'"><i class="fas fa-pencil-square-o"></i><br>Mission Statement</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Newsletters.html'"><i class="fas fa-newspaper"></i><br>Newsletter</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Publications.html'"><i class="fas fa-file-text"></i><br>Publications</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/sewa-guideline.pdf'"><i class="fas fa-image"></i><br>SEWA Guidelines</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Student Council.html'"><i class="fas fa-file-text"></i><br>Student Council</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Song Book.html'"><i class="fas fa-file-text"></i><br>Song Book</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Orbit Next Issue.html'"><i class="fas fa-book"></i><br>TES Orbit</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='http://dpspatna.com/tc.php'"><i class="fas fa-file-text"></i><br>Transfer Certificate</button>
+    </div>
+  </div>
+</div>
+<div class="button-group mobile">
+  <div class="button">
+    <div class="d-grid gap-2 group"><center>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/ATL-Website_Patna.pdf'"><i class="fas fa-robot"></i><br>ATL</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/Almanac-Patna.pdf'"><i class="fas fa-book"></i><br>Almanac</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='http://www.youtube.com/channel/UC2VNR2593UZFa2Qt28oAO4g'"><i class="fab fa-youtube"></i><br>YouTube Channel</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Application Forms.html'"><i class="fas fa-file-text"></i><br>Forms</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Mission Statement.html'"><i class="fas fa-pencil-square-o"></i><br>Mission Statement</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Newsletters.html'"><i class="fas fa-newspaper"></i><br>Newsletter</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Publications.html'"><i class="fas fa-file-text"></i><br>Publications</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='PDF/sewa-guideline.pdf'"><i class="fas fa-image"></i><br>SEWA Guidelines</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Student Council.html'"><i class="fas fa-file-text"></i><br>Student Council</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Song Book.html'"><i class="fas fa-file-text"></i><br>Song Book</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='Orbit Next Issue.html'"><i class="fas fa-book"></i><br>TES Orbit</button>
+      <button class="btn btn-light" type="button" onclick="window.location.href ='http://dpspatna.com/tc.php'"><i class="fas fa-file-text"></i><br>Transfer Certificate</button></center>
+    </div>
+  </div>
+</div>
+<div class="recent-event"><br>
+    <h3><i class="fas fa-trophy size"></i>  RECENT ACTIVITIES</h3>
+    <div class="container-fluid p-0 m-0
+          align-items-center
+          justify-content-center d-flex"
+        style="background-color: #fff;">
+
+      <!-- Row for the card-->
+      <div class="row w-100 p-0 w-0">
+
+        <!-- Column for card-->
+        <div class="col-lg-4 mb-2 bg">
+          <div class="card mx-auto" style="width:18rem;">
+            <img class="card-img-top" src="Image/Activity-1.png" alt="..." title="Robofest">
+            <div class="card-body">
+              <h5 class="card-title">
+                <p class="date"><span class="dd">19</span><span class="month">DEC</span><span class="year"> 2022</span></p>
+                <a href="Recent Activity 1.html"> Visit To Vidhan Sabha</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Column for card-->
+        <div class="col-lg-4 mb-2 bg">
+          <div class="card mx-auto" style="width:18rem;">
+            <img class="card-img-top" src="Image/Activity-2.png" alt="..." title="Independence Day">
+
+            <div class="card-body">
+              <h5 class="card-title">
+                <p class="date"><span class="dd">09</span><span class="month">DEC</span><span class="year"> 2022</span></p>
+                <a href="Recent Activity 2.html">Get Set Go</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Another column for card -->
+        <div class="col-lg-4 mb-2">
+          <div class="card mx-auto" style="width:18rem;">
+            <img class="card-img-top" src="Image/Activity-3.png" alt="..." title="India My Pride">
+
+            <div class="card-body">
+              <h5 class="card-title">
+                <p class="date"><span class="dd">05</span><span class="month">DEC</span><span class="year"> 2022</span></p>
+                 <a href="Recent Activity 3.html">Financial Literacy Club To RBI</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+<div class="upbtn">
+  <center><a href="#TOP"><button type="button" name="button" class="btn btn-dark"><i class="fa-solid fa-arrow-up up"></i>  Go To Top</button></a></center>
+</div>
+<div class="bottom-container">
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+
+        <p><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.253076518001!2d85.01482331425183!3d25.629724820307402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed542c13163053%3A0xb0fb979bdb251e33!2sDelhi%20Public%20School%20Patna!5e0!3m2!1sen!2sin!4v1638256231029!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe></p>
+
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">SCHOOL CAMPUS</h5><br>
+
+        <ul class="list-unstyled">
+          <li>
+            <b>Address</b><br>Vill. Chandmari, P.S. Shahpur<br>Danapur Cantonment<br>Patna - 801 502
+          </li>
+          <li>
+            <br><b>Phone</b><br>+91 9973811118<br>+91 9771450118
+          </li>
+          <li>
+            <br><b>Email</b><br><a href="mailto:info@dpspatna.com">info@dpspatna.com</a>
+          </li>
+          <li>
+            <br><a href="https://apps.apple.com/us/app/delhi-public-school-patna/id1011125800?ls=1">
+            <img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt="available on the app store" class="app-store-1"></a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">ADMINISTRATIVE OFFICE</h5><br>
+
+        <ul class="list-unstyled">
+          <li>
+            <b>Address</b><br>Priyadarshi Nagar<br>West Bailey Road<br>Patna – 801 503
+          <li>
+            <br><b>Phone</b><br>+91 9973311118<br>+91 9771440118
+          </li>
+          <li>
+            <br><b>Website</b><br><a href="http://dpspatna.com/">www.dpspatna.com</a>
+          </li>
+          <li>
+            <br><a href="https://play.google.com/store/apps/details?id=com.edunext.dpspatna">
+            <img src="Image/Google Play Store.png" alt="available on the app store" class="play-store"></a>
+            <br><br><a href="https://apps.apple.com/us/app/delhi-public-school-patna/id1011125800?ls=1">
+            <img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" alt="available on the app store" class="app-store-2"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-left py-3 copywrite">
+   © 1998-2022 DPS Patna. All rights reserved. Powered by <a href="https://www.takshila.net/">Takshila Educational Society</a> and
+   <a href="#"> Shivam</a>
+  </div>
+ </footer>
+</div>
+
+<div class="responsive-text">
+  <img src="Image/404 favicon.png" alt="*404*"><br>
+  <b>Not Supported</b>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity= "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "262px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible-option");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+  var preloader = document.getElementById('loading');
+
+  function myFunction() {
+    preloader.style.display = 'none';
+  }
+</script>
+</body>
+</html>
