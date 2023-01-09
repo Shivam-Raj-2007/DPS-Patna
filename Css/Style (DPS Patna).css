@@ -1009,6 +1009,7 @@
       top: 420px;
       left: 0px;
    }
+ }
 
    @media screen and (max-width: 768px) {
      .welcome,.event,.circular,.mobile,.recent-event,.GSPLogo {
