@@ -236,16 +236,10 @@
       top: 550px;
     }
     .portal {
-      left: 20px;
+      right: 0px;
       animation-name: portal-responsive-2;
       animation-duration: 4s;
       animation-iteration-count: infinite;
-    }
-  }
-
-  @media screen and (max-width: 334px){
-    .portal {
-      width: 300px;
     }
   }
 
@@ -545,7 +539,7 @@
 
   @media screen and (max-width: 332px) {
     .circular {
-      top: 2575px;
+      top: 2585px;
     }
   }
 
@@ -953,8 +947,8 @@
 
   .button .btn {
     width: 300px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-left: 75px;
     padding-right: 75px;
     border-radius: 20px;
@@ -1020,11 +1014,16 @@
     width: 120px;
     z-index: 999;
     border-radius: 15px;
- }
-
+  }
 
    @media screen and (max-width: 768px) {
-     .GSPLogo {
-       top: 420px;
-       right: 0px !important
+    .GSPLogo {
+      top: 420px;
+      left: 0px;
+   }
+
+   @media screen and (max-width: 768px) {
+     .welcome,.event,.circular,.mobile,.recent-event,.GSPLogo {
+       margin-left: 15px
+     }
     }
