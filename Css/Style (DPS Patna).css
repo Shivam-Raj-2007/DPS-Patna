@@ -281,19 +281,6 @@
     font-size: 15px
   }
 
-  @media screen and (max-width: 768px) {
-    .event {
-      position: absolute;
-      top: 1250px
-    }
-  }
-
-  @media screen and (max-width: 325px) {
-    .event {
-      top: 1278px
-    }
-  }
-
   .card{
     margin: 5% 0%;
   }
@@ -310,9 +297,18 @@
 
   @media screen and (max-width: 768px) {
     .event {
+      position: absolute;
+      top: 875px;
+    }
+  }
+
+  @media screen and (max-width: 735px) {
+    .event {
+      position: absolute;
       top: 900px;
     }
   }
+
   @media screen and (max-width: 670px){
     .event {
       top: 925px;
@@ -325,7 +321,7 @@
     }
   }
 
-  @media screen and (max-width: 582px){
+  @media screen and (max-width: 575px){
     .event {
       top: 975px
     }
@@ -342,63 +338,63 @@
     }
   }
 
-  @media screen and (max-width: 484px){
+  @media screen and (max-width: 475px){
     .event {
       top: 1050px;
     }
   }
 
-  @media screen and (max-width: 456px){
+  @media screen and (max-width: 448px){
     .event {
       top: 1075px;
     }
   }
 
-  @media screen and (max-width: 435.8px){
+  @media screen and (max-width: 407px){
     .event {
       top: 1100px;
     }
   }
 
-  @media screen and (max-width: 417px){
+  @media screen and (max-width: 393px){
     .event {
       top: 1125px;
     }
   }
 
-  @media screen and (max-width: 402px){
+  @media screen and (max-width: 373px){
     .event {
       top: 1150px;
     }
   }
 
-  @media screen and (max-width: 383px){
+  @media screen and (max-width: 357px){
     .event {
       top: 1175px;
     }
   }
 
-  @media screen and (max-width: 367px){
+  @media screen and (max-width: 352px){
     .event {
       top: 1200px;
     }
   }
 
-  @media screen and (max-width: 357px){
+  @media screen and (max-width: 346px){
     .event {
       top: 1225px;
     }
   }
 
-  @media screen and (max-width: 340px){
+  @media screen and (max-width: 330px){
     .event {
       top: 1250px;
     }
   }
 
-  @media screen and (max-width: 330px){
+  @media screen and (max-width: 320px){
     .event {
-      top: 1265px;
+      top: 1275px;
     }
   }
 
