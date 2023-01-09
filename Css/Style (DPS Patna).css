@@ -831,13 +831,6 @@
     }
   }
 
-  @media screen and (max-width: 400px) {
-    .recent-event {
-      margin-right: 30px
-    }
-    }
-  }
-
    body::-webkit-scrollbar {
        width: 12px;
    }
@@ -1025,5 +1018,4 @@
        url('https://raw.githubusercontent.com/Shivam-Raj-2007/DPS-Patna/main/Image/Loader.gif')
        no-repeat center;
        z-index: 99999;
-       overflow: hidden;
      }
