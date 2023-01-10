@@ -1024,3 +1024,7 @@
      background:#e2e8ff;
      color:#001d9b;
    }
+
+   .underscore {
+     visibility: hidden;
+   }
