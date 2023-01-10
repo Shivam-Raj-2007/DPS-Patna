@@ -1010,12 +1010,17 @@
      }
     }
 
-    #loading{
-       position: fixed;
-       width: 100%;
-       height: 100%;
-       background: #fff
-       url('https://raw.githubusercontent.com/Shivam-Raj-2007/DPS-Patna/main/Image/Loader.gif')
-       no-repeat center;
-       z-index: 99999;
-     }
+  #loading{
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     background: #fff
+     url('https://raw.githubusercontent.com/Shivam-Raj-2007/DPS-Patna/main/Image/Loader.gif')
+     no-repeat center;
+     z-index: 99999;
+   }
+
+   ::selection {
+     background:#e2e8ff;
+     color:#001d9b;
+   }
