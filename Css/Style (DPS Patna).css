@@ -889,7 +889,7 @@
   }
 
   @media screen and (max-width: 319px) {
-    img,p,div,h3,h2,h1,h4,h5,h6,.sidenav,.navbar,.lines,.carousel,.welcome,marquee,.portal,.GSPLogo,.GSPLogo img
+    img,p,div,h3,h2,h1,h4,h5,h6,table,.sidenav,.navbar,.lines,.carousel,.welcome,marquee,.portal,.GSPLogo,.GSPLogo img
     .event,.circular,.button-group,.recent-event,.bottom-container,.upbtn{
       display: none;
     }
