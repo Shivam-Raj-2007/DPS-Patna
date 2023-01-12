@@ -1036,7 +1036,13 @@
      width: 100%;
      right: 0;
      position: fixed;
-     z-index: 1000000000000;
+     z-index: 1003;
      transition: 0.0000000000000001s;
      width: 0;
+   }
+
+   .sidenavExit {
+     height: 100vh;
+     width: 100%;
+     right: 0;
    }
