@@ -99,7 +99,9 @@
       </style>
      </head>
      <body onload="myFunction()">
-   <div id="loading"></div>
+     <div id="loading"></div>
+       <div id="sidenavMain">
+       <div class="sidenavExit" onclick="closeNav()"></div>
        <div id="mySidenav" class="sidenav">
        <div class="menu-top" id="menuTop"><a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()"><img src="Image/close.png" class="close_img"></a></div><br><br><br>
        <button type="button" class="collapsible collapsible-option">About</button>
@@ -137,11 +139,11 @@
          <a href="http://dpspatna.com/image-gallery.php?PAGE=61">Image Gallery</a>
          <a href="http://dpspatna.com/video.php">Video Gallery</a>
        </div>
-       <a href="http://dpspatna.com/contact.php?PAGE=31" class="nav-link">Contact</a></div>
-       <p class="lines"><a href="https://shivam-raj-2007.github.io/DPS-Patna/">Takshila & DPS Society Initiative</a></p>
+       <a href="http://dpspatna.com/contact.php?PAGE=31" class="nav-link">Contact</a></div></div>
+       <p class="lines"><a href="index.html">Takshila & DPS Society Initiative</a></p>
        <nav class="navbar navbar-expand-lg navbar-light bg-white">
      <div class="container-fluid">
-       <a class="navbar-brand" href="https://shivam-raj-2007.github.io/DPS-Patna/"><img src="Image/favicon.png" height="50px" weight="75px"><b> Delhi Public School<font color="orange"> Patna</font></b></a>
+       <a class="navbar-brand" href="index.html"><img src="Image/favicon.png" height="50px" weight="75px"><b> Delhi Public School<font color="orange"> Patna</font></b></a>
        <a href="javascript:void(0);" class="icon" onclick="openNav()"><img src="Image\menu.png" height="25px"></a>
        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
          <ul class="navbar-nav ml-auto" >
@@ -358,13 +360,17 @@
 </script>
 
 <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "262px";
-      }
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "262px";
+      document.body.style.overflow = "hidden";
+      document.getElementById("sidenavMain").style.width = "100%";
+    }
 
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.overflow = "scroll";
+      document.getElementById("sidenavMain").style.width = "0";
+    }
 </script>
 <script>
     var preloader = document.getElementById('loading');
