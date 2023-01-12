@@ -1031,13 +1031,13 @@
    }
 
    #sidenavMain {
-     background: rgba(0, 0, 0, 0.7);
+     background: rgba(0, 0, 0, 0.65);
      height: 100vh;
      width: 100%;
      right: 0;
      position: fixed;
      z-index: 1003;
-     transition: 0.0000000000000001s;
+     transition: 0.00001s;
      width: 0;
    }
 
