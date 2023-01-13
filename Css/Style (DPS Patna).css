@@ -877,6 +877,7 @@
     animation-duration: infinite;
     padding: 5px;
     padding-bottom: 0px;
+    line-height: 2;
   }
 
   @-webkit-keyframes rightThenLeft {
@@ -1053,3 +1054,25 @@
      width: 100%;
      right: 0;
    }
+
+    .latest {
+      background: #FFA500;
+      display: inline;
+      padding: 10px;
+      margin: 0px;
+      position: absolute;
+      top: 572px;
+      left: 0px;
+    }
+
+    @media screen and (max-width: 768px){
+      .latest {
+        top: 372px;
+      }
+    }
+
+    @media screen and (max-width: 649px){
+      .latest {
+        display: none;
+      }
+    }
