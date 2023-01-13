@@ -1075,4 +1075,7 @@
       .latest {
         display: none;
       }
+      marquee {
+        line-height: normal;
+      }
     }
