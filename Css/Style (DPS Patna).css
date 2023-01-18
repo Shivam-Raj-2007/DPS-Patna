@@ -873,16 +873,10 @@
   marquee {
     width: 100%;
     white-space: nowrap;
-    -webkit-animation: rightThenLeft 1s linear;
     animation-duration: infinite;
     padding: 5px;
     padding-bottom: 0px;
     line-height: 2;
-  }
-
-  @-webkit-keyframes rightThenLeft {
-    0%   {left: 10%;}
-    50%  {left: 20%;}
   }
 
   .responsive-text {
