@@ -139,7 +139,7 @@
 
   .collapsible {
     font-size: 18px;
-    background-color: #ddd;
+    background-color: #fff;
     color: #818181;
     cursor: pointer;
     width: 100%;
@@ -158,6 +158,7 @@
     display: none;
     overflow: hidden;
     color: #40514E;
+    background-color: #ddd;
     text-align: left;
     padding: 8px 8px 8px 10px
   }
