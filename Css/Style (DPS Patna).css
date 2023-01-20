@@ -32,7 +32,7 @@
      padding: 8px 8px 8px 32px;
      text-decoration: none;
      font-size: 25px;
-     color: #818181;
+     color: #000;
      display: block;
      transition: 0.3s;
   }
@@ -140,7 +140,7 @@
   .collapsible {
     font-size: 18px;
     background-color: #fff;
-    color: #818181;
+    color: #000;
     cursor: pointer;
     width: 100%;
     border: none;
@@ -160,6 +160,10 @@
     background-color: #ddd;
     text-align: left;
     padding: 8px 8px 8px 10px
+  }
+
+  .content a {
+    color:  #818181;
   }
 
   .carousel-item img {
