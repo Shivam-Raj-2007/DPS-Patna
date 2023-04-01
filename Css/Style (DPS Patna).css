@@ -37,7 +37,9 @@ html{
    transition: 0.3s;
 }
 
-
+.sidenav a:hover {
+  color: #FFA500;
+}
 
 .sidenav .closebtn {
    position: absolute;
@@ -407,6 +409,7 @@ html{
   color: black;
   padding: 0px;
   border-radius: 15px;
+  cursor: context-menu;
 }
 
 .collapsible .date {
