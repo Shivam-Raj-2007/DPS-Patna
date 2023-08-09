@@ -1078,3 +1078,13 @@ marquee {
   .active {
     color: #FFA500;
   }
+
+
+  .disclamer span {
+    background-color: #ca1a0a;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-right: 2px;
+    line-height: 2.5;
+  }
